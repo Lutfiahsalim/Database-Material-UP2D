@@ -329,7 +329,7 @@ li a {
 --------------------DETAIL-PAGE-----------------------
 ------------------------------------------------------ */
 
-.title-page {
+/* .title-page {
     text-align: right;
     margin-right: 100px;
     margin-top: 80px;
@@ -346,11 +346,11 @@ li a {
     font-size: 16px;
     margin-top: 10px;
     margin-right: 30px;
-}
+} */
 
 /* ----------------DETAIL------------- */
 
-.detail {
+/* .detail {
     margin-top: 50px;
 }
 .view-detail .light {
@@ -395,12 +395,12 @@ li a {
     font-weight: 700;
     color: #14A2BA;
     padding-right: 30px;
-}
+} */
 
 /* ---------------------LOGIN----------------------
 ------------------------------------------------ */
 
-#login {
+/* #login {
     margin: 80px 200px 50px 230px;
 }
 
@@ -486,13 +486,13 @@ input[type="text"]:focus {
     color: #EFE62F;
     font-weight: 400;
     padding-left: 200px;
-}
+} */
 
 
 /* ------------------EDIT PAGE---------------------
 ------------------------------------------------ */
 
-.form-edit {
+/* .form-edit {
     margin: 0 200px 200px 300px;
 }
 
@@ -561,4 +561,4 @@ input[type="text"]:focus {
     border-radius: 12px;
     margin-right: 50px;
     font-weight: 600;
-}
+} */
