@@ -67,8 +67,17 @@ footer {
 }
 
 footer .row {
+    width: 90%;
+    margin: auto;
     display: flex;
     justify-content: space-around;
+}
+
+/* Responsive footer  */
+@media (max-width: 800px) {
+    footer .row {
+      flex-direction: column;
+    }
 }
 
 /* h4 .title {
@@ -99,6 +108,12 @@ footer .gray-desc {
     color: #BBBBBB;
     font-size: 15px;
     font-weight: 200;
+}
+
+@media (max-width: 800px) {
+    footer .gray-desc {
+      font-size: 18px;
+    }
 }
 
 footer .point-foot {

@@ -5,8 +5,17 @@
 
 .title-page {
     text-align: right;
-    margin-right: 100px;
+    /* margin-right: 100px; */
     margin-top: 80px;
+    padding-right: 70px;
+}
+
+/* Responsive title-page  */
+@media (max-width: 800px) {
+    .title-page {
+      text-align: left;
+      padding-left: 40px;
+    }
 }
 
 .title-page h2 {
@@ -25,15 +34,24 @@
 /* ----------------DETAIL------------- */
 
 .detail {
-    margin-top: 50px;
+    padding-top: 30px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
 }
+
+.detail .view-detail {
+    padding-bottom: 15px;
+}
+
 .view-detail .light {
     display: flex;
     justify-content: space-between;
-    margin: 20px 40px 20px 50px;
+    /* margin: 20px 40px 20px 50px; */
     background: rgba(231, 246, 249, 0.5);
     border-radius: 20px;
-    width: 1400px;
+    /* width: 1400px; */
     height: 60px;
     align-items: center;
 }
@@ -43,8 +61,8 @@
     justify-content: space-between;
     background: #E7F6F9;
     border-radius: 20px;
-    margin: 20px 40px 20px 50px;
-    width: 1400px;
+    /* margin: 20px 40px 20px 50px; */
+    /* width: 1400px; */
     height: 60px;
     align-items: center;
 }
@@ -54,8 +72,8 @@
     justify-content: space-between;
     background: #E7F6F9;
     border-radius: 20px;
-    margin: 20px 40px 20px 50px;
-    width: 1400px;
+    /* margin: 20px 40px 20px 50px; */
+    /* width: 1400px; */
     height: 157px;
     align-items: center;
 }

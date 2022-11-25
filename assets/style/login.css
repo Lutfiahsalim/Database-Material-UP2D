@@ -2,7 +2,9 @@
 ------------------------------------------------ */
 
 #login {
-    margin: 80px 200px 50px 230px;
+    /* margin: 80px 200px 50px 230px; */
+    width: 70%;
+    margin: 80px auto;
 }
 
 .content {

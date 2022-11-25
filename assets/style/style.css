@@ -51,6 +51,7 @@
 /* ----------------Searching-------------  */
 .search {
     width: 540px;
+    /* width: 70%; */
     height: 45px;
     background: #14A2BA;
     border-radius: 12px;
