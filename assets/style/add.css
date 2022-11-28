@@ -1,0 +1,57 @@
+.btn-save {
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 40px;
+}
+
+.addbtn {
+    text-decoration: none;
+    background-color: rgb(28, 5, 218);
+    color: rgb(231, 246, 249);
+    font-size: 15px;
+    border-radius: 17px;
+    font-weight: 500;
+    display: flex;
+    padding: 0px 149px;
+    margin-right: 15px;
+    box-shadow: rgb(0 0 0 / 25%) 0px 4px 8px;
+    align-items: center;
+}
+
+.cancelbtn {
+    text-decoration: none;
+    background-color: #E7F6F9;
+    height: 50px;
+    color: #1C05DA;
+    font-size: 15px;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+@media (max-width: 800px) {
+    .btn-save {
+        display: flex;
+        padding-top: 10px;
+        padding-bottom: 40px;
+    }
+    
+    .addbtn {
+        height: 40px;
+        color: #E7F6F9;
+        font-size: 13px;
+        border-radius: 15px;
+        font-weight: 500;
+        padding: 0px 20px;
+    }
+    
+    .cancelbtn {
+        text-decoration: none;
+        background-color: rgb(231, 246, 249);
+        height: 40px;
+        color: rgb(28, 5, 218);
+        font-size: 12px;
+        border-radius: 12px;
+        padding: 0px 14px;
+        font-weight: 500;
+    }
+}
