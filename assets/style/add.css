@@ -28,7 +28,7 @@
     font-weight: 600;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 425px) {
     .btn-save {
         display: flex;
         padding-top: 10px;

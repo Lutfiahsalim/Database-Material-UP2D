@@ -138,7 +138,7 @@
     }
     
     .title-page p {
-        font-size: 14px;
+        font-size: 13px;
         margin-top: 8px;
     }
 
@@ -156,7 +156,7 @@
     .form-edit label {
 
         font-weight: 700;
-        font-size: 14px;
+        font-size: 16px;
         color: #14A2BA;
     }
 
@@ -167,7 +167,7 @@
     }
 
     .form-edit ::placeholder {
-        font-size: 14px;
+        font-size: 15px;
     }
 
     .form-edit .input-image {
@@ -198,9 +198,9 @@
         background-color: #1C05DA;
         height: 40px;
         color: #E7F6F9;
-        font-size: 14px;
+        font-size: 13px;
         border-radius: 12px;
-        padding: 0px 17px;
+        padding: 0px 15px;
         font-weight: 500;
     }
     
