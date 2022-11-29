@@ -80,42 +80,38 @@
 /* -----------Download----------- */
 
 .btn-add {
-    /* margin-right: 250px; */
-    width: 130px;
-    height: 45px;
+    
+    padding: 10px 26px;
     background-color: #14A2BA;
     border: none;
-    border-radius: 18px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
-    /* margin-left: 380px; */
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgb(0 0 0 / 25%);
 }
 
-.btn-add i {
+/* .btn-add i {
     color: #E7F6F9;
     padding-right: 0.5em;
     padding-left: 1em;
     padding-top: 0.8em;
-}
+} */
 
 .btn-add a {
     text-decoration: none;
     color: #E7F6F9;
     font-family: "Nunito", sans-serif;
     font-size: 15px;
-    padding-right: 0.5em;
+    padding-top: 0.8em;
 }
 
 
 .btn-download {
         /* margin-right: 250px; */
-        width: 130px;
-        height: 45px;
+        /* width: 130px;
+        height: 45px; */
+        padding: 4px 8px;
         background-color: #14A2BA;
         border: none;
-        border-radius: 18px;
+        border-radius: 15px;
         /* display: inline-block; */
         box-shadow: 0px 4px 8px rgb(0 0 0 / 25%);
         /* margin-left: 380px; */
@@ -124,7 +120,7 @@
 .btn-download i {
     color: #EFE62F;
     padding-right: 0.5em;
-    padding-left: 1em;
+    /* padding-left: 1em; */
     padding-top: 0.8em;
 }
 
@@ -133,7 +129,7 @@
     color: #E7F6F9;
     font-family: "Nunito", sans-serif;
     font-size: 15px;
-    padding-right: 0.5em;
+    /* padding-right: 0.5em; */
 }
 
 .cover-table {
@@ -258,30 +254,29 @@ tr:nth-child(even){
 
     .btn-add {
         margin: 7px 0;
-        width: 70px;
-        height: 30px;
-        border-radius: 8px;
-        box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.1);
+        padding: 6px 12px;
+        width: 64px;
+        /* height: 10px; */
+        border-radius: 10px;
+        box-shadow: 0px 4px 5px rgb(0 0 0 / 10%);
     }
     
     .btn-add i {
         color: #E7F6F9;
-        /* padding-right: 0.5em;
-        padding-left: 1em;
-        padding-top: 0.8em; */
     }
     
     .btn-add a {
         color: #E7F6F9;
         font-size: 10px;
-        padding: 0.4em 0;
+        /* padding: 0.4em 0; */
     }
     
     .btn-download {
-        width: 90px;
-        height: 30px;
-        border-radius: 8px;
-        box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.1);
+        /* margin: 7px 0; */
+        padding: 5px 8px;
+        width: 71px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 5px rgb(0 0 0 / 10%);
     }
     
     .btn-download i {
