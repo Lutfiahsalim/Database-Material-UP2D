@@ -163,15 +163,15 @@ tr:nth-child(even){
     background-color: #14A2BA;
 }
 
-.fa-edit {
+table .fa-edit {
     color: #EFE62F;
     text-decoration: none;
-    font-size: 1.5em;
+    font-size: 1.25em;
 }
 
-.fa-trash {
+table .fa-trash {
     color: red;
-    font-size: 1.5em;
+    font-size: 1.25em;
 }
 
 /* -------------PAGINATION-------------- */
@@ -338,13 +338,13 @@ tr:nth-child(even){
     }
     
     table .fa-edit {
-        font-size: 1em;
+        font-size: 1.25em;
         color: #EFE62F;
         text-decoration: none;
     }
     
     table .fa-trash {
-        font-size: 1em;
+        font-size: 1.25em;
         color: red;
     }
     

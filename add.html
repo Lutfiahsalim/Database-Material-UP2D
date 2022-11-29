@@ -65,12 +65,16 @@
     </div>
     <div class="form-wrapper">
         <label for="user">Pemeliharaan</label> <br>
-        <input type="text" class="input-maintain" placeholder="00/00/0000"> <br>
+        <div class="input-datetime">
+            <input type="date" id="start" name="trip-start"
+                value="0000-00-00"
+                min="2018-01-01" max="2022-12-31"> <br>
+        </div>
     </div>
 
     <div class="btn-save">
             <a class="addbtn" href="index.html">Tambahkan Data</a>
-            <a class="cancelbtn" href="#">Batal </a>
+            <a class="cancelbtn" href="add.html">Batal</a>
         </div>
     </div>
 

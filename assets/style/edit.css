@@ -47,6 +47,13 @@
     border-radius: 12px;
 }
 
+input[type=text] {
+    color: #14A2BA;
+    padding-left: 20px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
 .form-edit :placeholder-shown {
     padding-left: 20px;
 }
@@ -91,7 +98,18 @@
     text-align: center;
     padding: auto;
     padding-bottom: 5px;
-} 
+}
+
+.form-edit .input-datetime input {
+    width: 50%;
+}
+
+.form-edit #start { /* date-time pemeliharaan */
+    font-family: "Nunito", sans-serif;
+    color: rgba(18, 93, 114, 0.43);
+    padding-left: 20px;
+    margin-right: 10px;
+}
 
 .btn-save {
     display: flex;
@@ -164,6 +182,10 @@
         height: 35px;
         background-color: #E7F6F9;
         border-radius: 10px;
+    }
+
+    input[type=text] {
+        font-size: 13px;
     }
 
     .form-edit ::placeholder {
