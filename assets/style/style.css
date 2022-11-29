@@ -75,6 +75,7 @@
 
 .search i {
     color: #EFE62F;
+    font-size: 1.25em;
 }
 
 /* -----------Download----------- */
@@ -143,11 +144,12 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
     width: 100%;
+    /* overflow-x: auto; */
 }
   
 th, td {
     text-align: center;
-    padding: 8px;
+    padding: 10px;
 }
 
 .serial-num a{
@@ -164,10 +166,12 @@ tr:nth-child(even){
 .fa-edit {
     color: #EFE62F;
     text-decoration: none;
+    font-size: 1.5em;
 }
 
 .fa-trash {
     color: red;
+    font-size: 1.5em;
 }
 
 /* -------------PAGINATION-------------- */
@@ -199,7 +203,7 @@ tr:nth-child(even){
 }
 
 
-@media (max-width: 800px) {
+@media (max-width: 425px) {
     .greeting h2 {
         font-weight: 600;
         font-size: 25px;
@@ -222,12 +226,13 @@ tr:nth-child(even){
     .top-table .btn-wrapper {
         width: 274px;
         display: flex;
-        flex-direction: column-reverse;
-        margin-top: 10px;
+        margin: 20px 0 10px 0;
+        align-items: center;
+        justify-content: flex-start;
     }
 
     .cover-table {
-        padding: 0;
+        padding: 10px;
     }
 
     .search {
@@ -245,17 +250,19 @@ tr:nth-child(even){
     }
     
     .search input::placeholder {
-        font-size: 10px;
+        font-size: 12px;
     }
     
     .search i {
         color: #EFE62F;
+        font-size: 1em;
+
     }
 
     .btn-add {
-        margin: 7px 0;
+        margin: 0 8px 0 0;
         padding: 6px 12px;
-        width: 64px;
+        width: 30%;
         /* height: 10px; */
         border-radius: 10px;
         box-shadow: 0px 4px 5px rgb(0 0 0 / 10%);
@@ -267,48 +274,51 @@ tr:nth-child(even){
     
     .btn-add a {
         color: #E7F6F9;
-        font-size: 10px;
-        /* padding: 0.4em 0; */
+        font-size: 12px;
+        /* text-align: center; */
+        padding: 0 0.4em 0;
     }
     
     .btn-download {
         /* margin: 7px 0; */
-        padding: 5px 8px;
-        width: 71px;
+        /* padding: 6px 12px; */
+        width: 30%;
         border-radius: 10px;
         box-shadow: 0px 4px 5px rgb(0 0 0 / 10%);
     }
     
     .btn-download i {
         color: #EFE62F;
-        padding-right: 0.5em;
+        /* padding-right: 0.5em;
         padding-left: 1em;
-        padding-top: 0.8em;
+        padding-top: 0.8em; */
     }
     
     .btn-download a {
         color: #EFE62F;
-        font-size: 10px;
-        padding: 0.4em 0;
+        font-size: 12px;
+        padding: 0 4px;
+        /* padding: 0 0.5em 0; */
     }
 
     table {
-        border-collapse: collapse;
-        border-spacing: 0;
+        /* border-collapse: collapse;
+        border-spacing: 0; */
         width: 80%;
-        margin: auto;
+        /* margin: auto;
+        overflow-x: auto; */
     }
       
     th {
         text-align: center;
         padding: 12px;
-        font-size: 10px;
+        font-size: 12px;
     }
 
     td {
         text-align: center;
         padding: 4px;
-        font-size: 10px;
+        font-size: 13px;
     }
 
     td img {
@@ -319,7 +329,7 @@ tr:nth-child(even){
     .serial-num a{
         color: #125D72;
         font-weight: 400;
-        font-size: 10px;
+        font-size: 13px;
     
     }
       
@@ -327,12 +337,14 @@ tr:nth-child(even){
         background-color: #14A2BA;
     }
     
-    .fa-edit {
+    table .fa-edit {
+        font-size: 1em;
         color: #EFE62F;
         text-decoration: none;
     }
     
-    .fa-trash {
+    table .fa-trash {
+        font-size: 1em;
         color: red;
     }
     

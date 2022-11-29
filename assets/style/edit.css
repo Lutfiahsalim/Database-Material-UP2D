@@ -156,7 +156,7 @@
     .form-edit label {
 
         font-weight: 700;
-        font-size: 16px;
+        font-size: 14px;
         color: #14A2BA;
     }
 
@@ -167,7 +167,7 @@
     }
 
     .form-edit ::placeholder {
-        font-size: 15px;
+        font-size: 13px;
     }
 
     .form-edit .input-image {
