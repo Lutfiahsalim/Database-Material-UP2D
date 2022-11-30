@@ -41,7 +41,7 @@
     width: 274px;
     /* background-color: #4506f3; */
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 /* ----------------Searching-------------  */
@@ -82,7 +82,7 @@
 
 .btn-add {
     
-    padding: 10px 26px;
+    padding: 10px 15px;
     background-color: #14A2BA;
     border: none;
     border-radius: 15px;
@@ -101,6 +101,7 @@
     color: #E7F6F9;
     font-family: "Nunito", sans-serif;
     font-size: 15px;
+    font-weight: 500;
     padding-top: 0.8em;
 }
 
@@ -127,9 +128,10 @@
 
 .btn-download a {
     text-decoration: none;
-    color: #E7F6F9;
+    color: #EFE62F;
     font-family: "Nunito", sans-serif;
     font-size: 15px;
+    font-weight: 600;
     /* padding-right: 0.5em; */
 }
 
