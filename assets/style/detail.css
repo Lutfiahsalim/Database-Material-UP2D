@@ -19,14 +19,49 @@
 .title-page p {
     color: #BBBBBB;
     font-size: 16px;
-    margin-top: 10px;
-    margin-right: 30px;
+    margin: 10px 30px 50px;
+}
+
+.btn-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 63px;
+    padding-bottom: 0;
+}
+
+.btn-wrapper .editbtn{
+    margin: 0 12px;
+    padding: 7px 20px;
+    background-color: #14A2BA;
+    border-radius: 10px;
+    box-shadow: 0px 4px 5px rgb(0 0 0 / 20%);
+}
+
+.btn-wrapper .editbtn a {
+    color: #efe62f	;
+    font-weight: 300;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.btn-wrapper .deletebtn {
+    padding: 7px 15px;
+    background-color: #E7F6F9;
+    border-radius: 10px;
+    box-shadow: 0px 4px 5px rgb(0 0 0 / 20%);
+}
+
+.btn-wrapper .deletebtn a {
+    color: #E10000;
+    font-weight: 600;
+    font-size: 15px;
+    text-decoration: none;
 }
 
 /* ----------------DETAIL------------- */
 
 .detail {
-    padding-top: 30px;
+    padding-top: 20px;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -94,7 +129,31 @@
     
     .title-page p {
         font-size: 12px;
-        margin-top: 8px;
+        margin: 0 0 40px;
+    }
+
+    .btn-wrapper {
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 26px;
+        padding-bottom: 0;
+    }
+    
+    .btn-wrapper .editbtn{
+        margin: 0 8px;
+        padding: 5px 12px;
+    }
+    
+    .btn-wrapper .editbtn a {
+        font-size: 12px;
+    }
+    
+    .btn-wrapper .deletebtn {
+        padding: 5px 12px;
+    }
+    
+    .btn-wrapper .deletebtn a {
+        font-size: 12px;
     }
     
     /* ----------------DETAIL------------- */

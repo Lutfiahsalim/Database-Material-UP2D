@@ -45,6 +45,9 @@
     background-color: #E7F6F9;
     border: none;
     border-radius: 12px;
+    color: #14A2BA;
+    font-size: 15px;
+    padding-left: 20px;
 }
 
 input:hover, input:focus { 
@@ -58,6 +61,14 @@ input[type="text"]:focus {
     color: #14A2BA;
     font-weight: 500;
 }
+
+/* .form-edit input::placeholder {
+    opacity: 0.5;
+    color: #BBBBBB;
+    font-family: "Nunito", sans-serif;
+    font-weight: 200;
+    font-size: 14px;
+} */
 
 .form-edit :placeholder-shown {
     padding-left: 20px;
@@ -173,11 +184,10 @@ input[type="text"]:focus {
     }
 
     .form-edit .form-wrapper {
-        padding-bottom: 10px;
+        padding-bottom: 12px;
     }
 
     .form-edit label {
-
         font-weight: 700;
         font-size: 14px;
         color: #14A2BA;
@@ -185,16 +195,32 @@ input[type="text"]:focus {
 
     .form-edit input {
         height: 35px;
-        background-color: #E7F6F9;
         border-radius: 10px;
+        color: #14A2BA;
+        font-size: 15px;
+        padding-left: 15px;
+        font-family: "Nunito", sans-serif;
     }
 
     input[type=text] {
-        font-size: 13px;
+        font-size: 14px;
     }
 
-    .form-edit ::placeholder {
-        font-size: 13px;
+    input[type="text"]:focus {
+        padding-left: 15px;
+        border: 1px solid #14A2BA;
+    }
+
+    /* .form-edit ::placeholder {
+        font-size: 10px;
+    } */
+
+    .form-edit input::placeholder {
+        opacity: 0.5;
+        color: #BBBBBB;
+        font-family: "Nunito", sans-serif;
+        font-weight: 100;
+        font-size: 12px;
     }
 
     .form-edit .input-image {
