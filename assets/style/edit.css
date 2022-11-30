@@ -47,10 +47,15 @@
     border-radius: 12px;
 }
 
-input[type=text] {
-    color: #14A2BA;
+input:hover, input:focus { 
+    border-color: #14A2BA;
+} 
+
+input[type="text"]:focus {
     padding-left: 20px;
-    font-size: 15px;
+    border: 2px solid #14A2BA;
+    outline: none;
+    color: #14A2BA;
     font-weight: 500;
 }
 

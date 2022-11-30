@@ -91,3 +91,71 @@ input[type="text"]:focus {
     padding-left: 200px;
 }
 
+@media (max-width: 425px) {
+    #login {
+        /* margin: 80px 200px 50px 230px; */
+        width: 80%;
+        margin: auto;
+    }
+    
+    .content {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        padding-top: 25px;
+    }
+    
+    .left-content {
+        padding-right: 0;
+    }
+    
+    .right-content {
+        padding-right: 30px;
+    }
+
+    .welc-greeting h2 {
+        font-weight: 800;
+        font-size: 30px;
+    }
+    
+    .welc-greeting p {
+        font-weight: 300;
+        font-size: 12px;
+        padding-bottom: 18px;
+    }
+    
+    .form-login {
+        margin-top: auto;
+    }
+    
+    .form-login label {
+        color: #125D72;
+        font-weight: 600;
+        font-size: 14px;
+    }
+    
+    .form-login input {
+        width: 250px;
+        border-radius: 10px;
+        color: #BBBBBB;
+    }
+    
+    .form-login input::placeholder {
+        font-size: 13px;
+    }
+    
+    .btn-login {
+        background-color: #125D72;
+        width: 250px;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    
+    .btn-login a{
+        font-size: 14px;
+        color: #EFE62F;
+        font-weight: 400;
+        padding-left: 100px;
+    }
+}
+
