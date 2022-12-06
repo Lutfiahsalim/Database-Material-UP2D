@@ -240,6 +240,16 @@ input[type="date"]:focus {
         border: 1px solid #14A2BA;
     }
 
+    .form-wrapper select {
+        height: 40px;
+        font-size: 15px;
+        width: 70%;
+    }
+
+    select:focus {
+        border: 1px solid #14A2BA;
+    }
+
     /* .form-edit ::placeholder {
         font-size: 10px;
     } */
