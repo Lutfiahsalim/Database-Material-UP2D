@@ -127,6 +127,35 @@ input[type="text"]:focus {
     margin-right: 10px;
 }
 
+.form-wrapper select{
+    -webkit-appearance:none;
+    width: 50%;
+    height: 50px;
+    background-color: #E7F6F9;
+    border: none;
+    border-radius: 12px;
+    color: #14A2BA;
+    font-size: 15px;
+    padding: 0 20px;
+}
+
+select:focus {
+    border: 2px solid #14A2BA;
+    outline: none;
+    cursor: pointer;
+}
+
+input[type="date"] {
+    padding: 0 1rem;
+}
+
+input[type="date"]:focus {
+    border: 2px solid #14A2BA;
+    outline: none;
+}
+
+
+
 .btn-save {
     display: flex;
 }

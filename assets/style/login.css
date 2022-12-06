@@ -4,7 +4,7 @@
 #login {
     /* margin: 80px 200px 50px 230px; */
     width: 70%;
-    margin: 80px auto;
+    margin: 70px auto;
 }
 
 .content {
@@ -51,8 +51,8 @@
     margin: 10px 0 20px 0;
     width: 450px;
     padding: 12px;
-    border: 1px;
-    border-style: solid;
+    border: 1px solid #BBBBBB;
+    /* border-style: solid; */
     border-radius: 10px;
     color: #14A2BA;
     font-size: 15px;
@@ -64,14 +64,14 @@ input:hover, input:focus {
 } 
 
 input[type="text"]:focus {
-    border: 2px solid #14A2BA;
+    border: 1px solid #14A2BA;
     outline: none;
     color: #14A2BA;
     padding: 12px;
 }
 
 input[type="password"]:focus {
-    border: 2px solid #14A2BA;
+    border: 1px solid #14A2BA;
     outline: none;
     color: #14A2BA;
     padding: 12px;
