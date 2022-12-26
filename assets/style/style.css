@@ -1,0 +1,360 @@
+/* ------------------WELCOME GREETING-------------------- */
+.greeting h2 {
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    color: #125D72;
+    margin: 50px 0 0 80px;
+}
+
+.greeting p {
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: #BBBBBB;
+    margin: 0 80px;
+}
+
+/* -------------TABEL------------- */
+.cover-back {
+    width: 90vw;
+    /* height: 1600px; */
+    margin: 30px auto;
+    background: #E7F6F9;
+    border-radius: 25px;
+}
+
+.top-table {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 60px;
+}
+
+.top-table .search-wrapper {
+    /* background-color: #06f316; */
+
+}
+
+.top-table .btn-wrapper {
+    width: 274px;
+    /* background-color: #4506f3; */
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* ----------------Searching-------------  */
+.search{
+    width: 540px;
+    /* width: 70%; */
+    height: 45px;
+    background: #14A2BA;
+    border-radius: 12px;
+    /* padding-right: 0px 4px 8px rgba(0, 0, 0, 0.25); */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 23px;
+}
+
+.search :placeholder-shown {
+    border: none;
+    background: none;
+    margin-left: 20px;
+}
+
+.search input::placeholder {
+    opacity: .75;
+    color: #125D72;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 200;
+    font-size: 16px;
+    justify-content: center;
+}
+
+.search i {
+    color: #EFE62F;
+    font-size: 1.25em;
+}
+
+/* -----------Download----------- */
+
+.btn-add {
+    
+    padding: 10px 15px;
+    background-color: #14A2BA;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgb(0 0 0 / 25%);
+}
+
+/* .btn-add i {
+    color: #E7F6F9;
+    padding-right: 0.5em;
+    padding-left: 1em;
+    padding-top: 0.8em;
+} */
+
+.btn-add a {
+    text-decoration: none;
+    color: #E7F6F9;
+    font-family: "Nunito", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    padding-top: 0.8em;
+}
+
+
+.btn-download {
+        /* margin-right: 250px; */
+        /* width: 130px;
+        height: 45px; */
+        padding: 4px 12px;
+        background-color: #14A2BA;
+        border: none;
+        border-radius: 15px;
+        /* display: inline-block; */
+        box-shadow: 0px 4px 8px rgb(0 0 0 / 25%);
+        /* margin-left: 380px; */
+}
+
+.btn-download i {
+    color: #EFE62F;
+    padding-right: 0.5em;
+    /* padding-left: 1em; */
+    padding-top: 0.8em;
+}
+
+.btn-download a {
+    text-decoration: none;
+    color: #EFE62F;
+    font-family: "Nunito", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    /* padding-right: 0.5em; */
+}
+
+.cover-table {
+    background-color: #E7F6F9;
+    padding: 30px 60px;
+
+}
+
+/* ------------Table----------- */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    /* overflow-x: auto; */
+}
+  
+th, td {
+    text-align: center;
+    padding: 10px;
+}
+
+.serial-num a{
+    text-decoration: none;
+    color: #125D72;
+    font-family: "Nunito", sans-serif;
+    font-weight: 700;
+}
+  
+tr:nth-child(even){
+    background-color: #14A2BA;
+}
+
+table .fa-edit {
+    color: #EFE62F;
+    text-decoration: none;
+    font-size: 1.25em;
+}
+
+table .fa-trash {
+    color: red;
+    font-size: 1.25em;
+}
+
+/* -------------PAGINATION-------------- */
+.pagination {
+    display: inline-block;
+    /* margin-left: 550px; */
+    padding-top: 30px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+  }
+  
+.pagination a {
+    color: #14A2BA;
+    float: center;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+  
+.pagination a.active {
+    color: #125D72;
+    border-radius: 5px;
+}
+  
+.pagination a:hover:not(.active) {
+    background-color: #125D72;
+    border-radius: 5px;
+}
+
+
+@media (max-width: 425px) {
+    .greeting h2 {
+        font-weight: 600;
+        font-size: 25px;
+        margin: 25px 0 0 30px;
+    }
+    
+    .greeting p {
+        font-weight: 200;
+        font-size: 12px;
+        margin: 0 30px;
+    }
+
+    .top-table {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        padding: 10px 25px;
+    }
+
+    .top-table .btn-wrapper {
+        width: 274px;
+        display: flex;
+        margin: 20px 0 10px 0;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .cover-table {
+        padding: 10px;
+    }
+
+    .search {
+        width: 280px;
+        height: 32px;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-right: 11px;
+    }
+    
+    .search :placeholder-shown {
+        margin-left: 15px;
+    }
+    
+    .search input::placeholder {
+        font-size: 12px;
+    }
+    
+    .search i {
+        color: #EFE62F;
+        font-size: 1em;
+
+    }
+
+    .btn-add {
+        margin: 0 8px 0 0;
+        padding: 6px 8px;
+        width: 27%;
+        /* height: 10px; */
+        border-radius: 10px;
+        box-shadow: 0px 4px 5px rgb(0 0 0 / 10%);
+    }
+    
+    .btn-add i {
+        color: #E7F6F9;
+    }
+    
+    .btn-add a {
+        color: #E7F6F9;
+        font-size: 12px;
+        /* text-align: center; */
+        /* padding: 0 0 0; */
+    }
+    
+    .btn-download {
+        /* margin: 7px 0; */
+        /* padding: 6px 12px; */
+        width: 30%;
+        border-radius: 10px;
+        box-shadow: 0px 4px 5px rgb(0 0 0 / 10%);
+    }
+    
+    .btn-download i {
+        color: #EFE62F;
+        /* padding-right: 0.5em;
+        padding-left: 1em;
+        padding-top: 0.8em; */
+    }
+    
+    .btn-download a {
+        color: #EFE62F;
+        font-size: 12px;
+        padding: 2px 3px;
+        /* padding: 0 0.5em 0; */
+    }
+
+    table {
+        /* border-collapse: collapse;
+        border-spacing: 0; */
+        width: 80%;
+        /* margin: auto;
+        overflow-x: auto; */
+    }
+      
+    th {
+        text-align: center;
+        padding: 12px;
+        font-size: 12px;
+    }
+
+    td {
+        text-align: center;
+        padding: 4px;
+        font-size: 13px;
+    }
+
+    td img {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .serial-num a{
+        color: #125D72;
+        font-weight: 400;
+        font-size: 13px;
+    
+    }
+      
+    tr:nth-child(even){
+        background-color: #14A2BA;
+    }
+    
+    table .fa-edit {
+        font-size: 1.25em;
+        color: #EFE62F;
+        text-decoration: none;
+    }
+    
+    table .fa-trash {
+        font-size: 1.25em;
+        color: red;
+    }
+    
+    .pagination a {
+        color: #14A2BA;
+        float: center;
+        font-size: 12px;
+        padding: 8px 16px;
+        text-decoration: none;
+    }
+}
