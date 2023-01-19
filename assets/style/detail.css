@@ -37,11 +37,13 @@
     box-shadow: 0px 4px 5px rgb(0 0 0 / 20%);
 }
 
-.btn-wrapper .editbtn a {
+.btn-wrapper .editbtn button {
     color: #efe62f	;
     font-weight: 600;
     font-size: 15px;
     text-decoration: none;
+    background: transparent;
+    border: none;
 }
 
 .btn-wrapper .deletebtn {
@@ -51,11 +53,13 @@
     box-shadow: 0px 4px 5px rgb(0 0 0 / 20%);
 }
 
-.btn-wrapper .deletebtn a {
+.btn-wrapper .deletebtn button {
     color: #E10000;
     font-weight: 600;
     font-size: 15px;
     text-decoration: none;
+    background: transparent;
+    border: none;
 }
 
 /* ----------------DETAIL------------- */
@@ -144,7 +148,7 @@
         padding: 5px 12px;
     }
     
-    .btn-wrapper .editbtn a {
+    .btn-wrapper .editbtn button {
         font-size: 12px;
     }
     
@@ -152,7 +156,7 @@
         padding: 5px 12px;
     }
     
-    .btn-wrapper .deletebtn a {
+    .btn-wrapper .deletebtn button {
         font-size: 12px;
     }
     

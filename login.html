@@ -11,7 +11,10 @@
      <link rel="stylesheet" href="./assets/style/login.css">
 
      <!-- Java Script -->
-     <script src="./assets/js/main.js"></script>
+     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+     <!-- <script src="./assets/js/main.js"></script> -->
+     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+     <script src="./assets/js/login.js"></script>
  
      <!-- icon -->
      <link href="assets/img/Logo_PLN.png" rel="shortcut icon">
@@ -26,16 +29,17 @@
                 <p>Silakan masukkan username dan password anda!</p>
             </div>
 
-            <div class="form-login">
+            <form class="formLogin">
                 <label for="user">Username</label> <br>
-                <input type="text" id="user-form" placeholder="Masukkan username anda"> <br>
+                <input type="text" id="username" placeholder="Masukkan username anda" autocomplete="on"> <br>
                 <label for="password">Password</label> <br>
-                <input type="password" id="user-form" placeholder="Masukkan password anda"> <br>
+                <input type="password" id="password" placeholder="Masukkan password anda"> <br>
 
                 <div class="btn-login">
-                    <a href="index.html">Masuk</a>
+                    <button type="button" id="btnLogin">Masuk</button>
+                    <!-- <a href="#" id="btnLogin">Masuk</a> -->
                 </div>
-            </div>
+            </form>
         </div>
 
         <div class="right-content">

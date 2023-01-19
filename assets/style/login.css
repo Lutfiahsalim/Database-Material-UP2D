@@ -4,7 +4,7 @@
 #login {
     /* margin: 80px 200px 50px 230px; */
     width: 70%;
-    margin: 60px auto;
+    margin: 50px auto;
 }
 
 .content {
@@ -38,16 +38,16 @@
     margin: 0;
 }
 
-.form-login {
+.formLogin {
     margin-top: 40px;
 }
 
-.form-login label {
+.formLogin label {
     color: #125D72;
     font-weight: 600;
 }
 
-.form-login input {
+.formLogin input {
     margin: 10px 0 20px 0;
     width: 450px;
     padding: 12px;
@@ -77,7 +77,7 @@ input[type="password"]:focus {
     padding: 12px;
 }
 
-/* .form-login input::placeholder {
+/* .formLogin input::placeholder {
     opacity: 0.5;
     color: #BBBBBB;
     font-family: "Nunito", sans-serif;
@@ -85,11 +85,11 @@ input[type="password"]:focus {
     font-size: 15px;
 } */
 
-.form-login :placeholder-shown {
+.formLogin :placeholder-shown {
     padding: 12px;
 }
 
-.form-login ::placeholder {
+.formLogin ::placeholder {
     font-size: 15px;
     font-family: "Nunito", sans-serif;
     color: rgba(18, 93, 114, 0.43);
@@ -102,13 +102,16 @@ input[type="password"]:focus {
     border-radius: 10px;
 }
 
-.btn-login a{
+.btn-login button{
     text-decoration: none;
     font-family: "Nunito", sans-serif;
     font-size: 18px;
     color: #EFE62F;
-    font-weight: 400;
+    font-weight: 600;
     padding-left: 200px;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
 }
 
 @media (max-width: 425px) {
@@ -144,17 +147,17 @@ input[type="password"]:focus {
         padding-bottom: 18px;
     }
     
-    .form-login {
+    .formLogin {
         margin-top: auto;
     }
     
-    .form-login label {
+    .formLogin label {
         color: #125D72;
         font-weight: 500;
         font-size: 14px;
     }
     
-    .form-login input {
+    .formLogin input {
         width: 250px;
         height: 15px;
         border-radius: 10px;
@@ -171,7 +174,7 @@ input[type="password"]:focus {
         border: 1px solid #14A2BA;
     }
     
-    .form-login input::placeholder {
+    .formLogin input::placeholder {
         font-size: 13px;
     }
     
@@ -182,7 +185,7 @@ input[type="password"]:focus {
         border-radius: 10px;
     }
     
-    .btn-login a{
+    .btn-login button{
         font-size: 14px;
         color: #EFE62F;
         font-weight: 400;
