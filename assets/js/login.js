@@ -73,7 +73,7 @@ function login() {
                 // $('#btnLogin' ).removeClass( "disable").prop('disabled', false);
                 Swal.fire({
                     title: `${temp.username} login ke datar!`,
-                    timer: 1500,
+                    timer: 800,
                     icon: "success",
                     showCancelButton: false,
                     showConfirmButton: false,
@@ -91,72 +91,3 @@ function login() {
         })       
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    //         console.log(response)
-    //             if (response.code("200") {
-    //                 const dataToken = JSON.stringify({
-    //                     token: response.token,
-    //                     refreshToken: response.refreshToken 
-    //                 })
-    //                 const userInfo = JSON.stringify({
-    //                     username: kapital(response.userData.username),
-    //                     role: kapital(response.userData.role)
-    //                 })
-    //                 sessionStorage.setItem("TOKEN_DATA", dataToken);
-    //                 sessionStorage.setItem("INFO_USER", userInfo);
-
-    //                 let temp = sessionStorage.getItem("INFO_USER");
-    //                 user = $.parseJSON(temp);
-    //             });
-    //         });
-            
-    //     });
-        
-    // }
-    
-    
-                    // if (response.status == "Success") {
-                    //     swal({
-                    //         type: response.status,
-                    //         title: "Berhasil!",
-                    //         text: `${user.username} login ke datar!`,
-                    //         icon: "success",
-                    //     });
-                    // } 
-                    // else (response.status == ajaxFailedFeedback)
-// swal({
-//     title: "Gagal!",
-//     text: "Anda tidak bisa login",
-//     icon: "error",
-//     buttons: true,
-//     dangerMode: true,
-//   });
-// }

@@ -12,6 +12,7 @@
     <!-- <link rel="stylesheet" href="./assets/style/style.css"> -->
 
     <!-- Java Script -->
+    
 
 
     <!-- icon -->
@@ -24,8 +25,8 @@
         <div class="row">
            <div class="navbar">
                <div class="col-md-2 nav" value="fit-content">
-                   <h3 class="logo"><a href="index.html">datar.</a></h3>
-                   <p class="">PLN UP2D MAKASSAR</p>
+                    <h3 class="logo"><button id="btnLogo" onclick="btnBack()">datar.</button></h3>
+                    <p class="">PLN UP2D MAKASSAR</p>
                </div>
                
                <div class="col-md-7 align-items-center btn-profile" value="fit-content">
@@ -40,14 +41,12 @@
         <p>Lihat detail Keypoint yang kamu scan!</p>
     </div>
 
-    <div class="btn-wrapper">
+    <div id=btnWrap class="btn-wrapper">
         <div class="editbtn">
-            <button onclick="hiddenedit()" id="btnedit"><i class="fa fa-edit"> Edit Data</i></button>
-            <!-- <a href="edit.html"><i class="fa fa-edit"></i> Edit Data</a> -->
+            <button id="btnEdit"><i class="fa fa-edit"></i> Edit Data</button>
         </div>
         <div class="deletebtn">
-            <button onclick="hiddendelete()" id="btndelete"><i class="fa fa-trash"> Hapus</i></button>
-            <!-- <a href="#"><i class="fa fa-trash"></i> Hapus</a> -->
+            <button id="btnDelete"><i class="fa fa-trash"></i> Hapus</button>
         </div>
     </div>
 
@@ -143,5 +142,7 @@
             </div>
         </div>
     </footer>
+
+    <script src="./assets/js/constants.js"></script>
 </body>
 </html>

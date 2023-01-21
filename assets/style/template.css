@@ -20,12 +20,15 @@ body {
     justify-content: space-between;
 }
 
-.nav h3 a{
+.nav h3 button{
     text-decoration: none;
     font-family: 'Lato', sans-serif;
     font-weight: 600;
     font-size: 45px;
     color: #FFFFFF;
+    background: transparent;
+    border: none;
+    cursor: pointer;
 }
 
 .nav h3.logo {
