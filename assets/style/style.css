@@ -32,11 +32,6 @@
     padding: 30px 60px;
 }
 
-/* .top-table .search-wrapper {
-    background-color: #06f316;
-
-} */
-
 .top-table .btn-wrapper {
     width: 274px;
     /* background-color: #4506f3; */
@@ -80,60 +75,47 @@
 
 /* -----------Download----------- */
 
-.btn-add {
-    
+.btn-add button{
     padding: 10px 15px;
     background-color: #14A2BA;
     border: none;
     border-radius: 15px;
     box-shadow: 0px 4px 8px rgb(0 0 0 / 25%);
-}
-
-/* .btn-add i {
-    color: #E7F6F9;
-    padding-right: 0.5em;
-    padding-left: 1em;
-    padding-top: 0.8em;
-} */
-
-.btn-add a {
-    text-decoration: none;
     color: #E7F6F9;
     font-family: "Nunito", sans-serif;
     font-size: 15px;
     font-weight: 500;
-    padding-top: 0.8em;
+    text-decoration: none;
+    border: none;
 }
 
-
-.btn-download {
-        /* margin-right: 250px; */
-        /* width: 130px;
-        height: 45px; */
-        padding: 4px 12px;
-        background-color: #14A2BA;
-        border: none;
-        border-radius: 15px;
-        /* display: inline-block; */
-        box-shadow: 0px 4px 8px rgb(0 0 0 / 25%);
-        /* margin-left: 380px; */
+.btn-download button{
+    padding: 10px 15px;
+    background-color: #14A2BA;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgb(0 0 0 / 25%);
+    text-decoration: none;
+    color: #EFE62F;
+    font-family: "Nunito", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
 }
 
 .btn-download i {
     color: #EFE62F;
     padding-right: 0.5em;
-    /* padding-left: 1em; */
     padding-top: 0.8em;
 }
 
-.btn-download a {
+/* .btn-download a{
     text-decoration: none;
     color: #EFE62F;
     font-family: "Nunito", sans-serif;
     font-size: 15px;
     font-weight: 600;
-    /* padding-right: 0.5em; */
-}
+    padding-right: 0.5em;
+} */
 
 .cover-table {
     background-color: #E7F6F9;
@@ -222,7 +204,6 @@ table .fa-trash {
         font-size: 12px;
         margin: 0 30px;
     }
-form
     .top-table {
         display: flex;
         flex-direction: column-reverse;
@@ -262,50 +243,26 @@ form
     
     .search i {
         color: #EFE62F;
-        font-size: 1em;
+        font-size: 0.8em;
 
     }
 
-    .btn-add {
-        margin: 0 8px 0 0;
-        padding: 6px 8px;
-        width: 27%;
-        /* height: 10px; */
-        border-radius: 10px;
-        box-shadow: 0px 4px 5px rgb(0 0 0 / 10%);
-    }
-    
-    .btn-add i {
-        color: #E7F6F9;
-    }
-    
-    .btn-add a {
-        color: #E7F6F9;
+    .btn-add button{
         font-size: 12px;
-        /* text-align: center; */
-        /* padding: 0 0 0; */
-    }
-    
-    .btn-download {
-        /* margin: 7px 0; */
-        /* padding: 6px 12px; */
-        width: 30%;
         border-radius: 10px;
-        box-shadow: 0px 4px 5px rgb(0 0 0 / 10%);
+        margin-right: 6px;
+        
     }
     
+    .btn-download button{
+        font-size: 12px;
+        border-radius: 10px;
+    }
     .btn-download i {
         color: #EFE62F;
-        /* padding-right: 0.5em;
-        padding-left: 1em;
-        padding-top: 0.8em; */
-    }
-    
-    .btn-download a {
-        color: #EFE62F;
-        font-size: 12px;
-        padding: 2px 3px;
-        /* padding: 0 0.5em 0; */
+        padding-right: 0.5em;
+        padding-top: 0;
+        font-size: 0.8em;
     }
 
     table {

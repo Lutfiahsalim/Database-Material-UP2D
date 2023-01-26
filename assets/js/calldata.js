@@ -33,7 +33,6 @@ function showData() {
 
 function tableData(apiData) {
   let tabelData;
-  let noRow;
   console.log(apiData)
 
   if(apiData.length == 0){
@@ -45,23 +44,28 @@ function tableData(apiData) {
   } 
   else {
     apiData.map((index, item) =>{
-      noRow = item + 1
+      let noRow = item + 1
+      // condition if the value is null or undefined
+      let noSerial = index.noSerial ? index.noSerial : '-';
+      let keypoint = index.keypoint ? index.keypoint : '-';
+      let link = index.link ? index.link : '-';
+      let pemeliharaanTerakhir = index.pemeliharaanTerakhir ? index.pemeliharaanTerakhir : '-';
       tabelData += `
           <tr>
             <td>${noRow}</td>
             <td>
               <a href="./edit.html">
-                <button onClick="editBtn('${index.uuid}')"><i class="fa-solid fa-pen-to-square"></i></button>
+                <button onClick="editBtn('${index.uuid}')"><i class="fa fa-edit"></i></button>
               </a>
               <a href="#">
-                <button onClick="deleteBtn('${index.uuid}')"><i class="fa-solid fa-trash"></i></button>
+                <button onClick="deleteBtn('${index.uuid}')"><i class="fa fa-trash"></i></button>
               </a>
             </td>
             <td></td>
-            <td class="serial-num"><a href="detail.html">${item.noSerial}</a></td>
-            <td>${item.keypoint}</td>
-            <td>${item.link}</td>
-            <td>${item.pemeliharaanTerakhir}</td>
+            <td class="serial-num"><a href="detail.html">${noSerial}</a></td>
+            <td>${keypoint}</td>
+            <td>${link}</td>
+            <td>${pemeliharaanTerakhir}</td>
           </tr>`
     })
   }
