@@ -32,10 +32,10 @@
     padding: 30px 60px;
 }
 
-.top-table .search-wrapper {
-    /* background-color: #06f316; */
+/* .top-table .search-wrapper {
+    background-color: #06f316;
 
-}
+} */
 
 .top-table .btn-wrapper {
     width: 274px;
@@ -161,9 +161,14 @@ th, td {
     font-weight: 700;
 }
   
-tr:nth-child(even){
+thead:nth-child(even){
     background-color: #14A2BA;
 }
+
+tbody:nth-child(even){
+    background-color: #14A2BA;
+}
+
 
 table .fa-edit {
     color: #EFE62F;

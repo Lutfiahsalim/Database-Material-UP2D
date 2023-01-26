@@ -49,7 +49,13 @@ body {
     margin-top: 15px;
 }
 
-.btn-profile i {
+.btn-profile button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-profile button i {
     padding: 20px;
     margin-top: 15px;
     width: 20px;
@@ -60,6 +66,40 @@ body {
     background: #14A2BA;
     color: #EFE62F;
 }
+
+/* drowdown css */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+  
+.dropdown-content {
+    display: none;
+    border-radius: 10px;
+    position: absolute;
+    background-color: #EFE62F;
+    min-width: 98px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin: 10px 0 0 0;
+}
+  
+.dropdown-content a {
+    color: #125D72;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 15px;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #EFE62F;
+    border-radius: 14px;
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+  }
 
 @media (max-width: 800px) {
     .navbar {
