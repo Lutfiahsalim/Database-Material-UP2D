@@ -1,9 +1,23 @@
 const baseUrl = "https://newbackend-datar-zbzgct5ujq-et.a.run.app"
 const urlProduct = baseUrl + "/products"
 
-$(document).ready(
+let tokenData = sessionStorage.getItem("TOKEN_DATA");
+// let token = tokenData.token;
+if (!tokenData) {
+  Swal.fire({
+    title: `Harap Login terlebih dahulu!`,
+    icon: "error",
+    showCancelButton: false,
+    showConfirmButton: true,
+  }).then(function(){
+    window.location.href = "/login.html";
+  })
+}
+
+$(document).ready(function() {
+  loader()
   showData()
-);
+});
 
 function showData() {
   let tokenData = JSON.parse(sessionStorage.getItem("TOKEN_DATA"));
@@ -49,11 +63,18 @@ function tableData(apiData) {
       let noSerial = index.noSerial ? index.noSerial : '-';
       let keypoint = index.keypoint ? index.keypoint : '-';
       let link = index.link ? index.link : '-';
-      let pemeliharaanTerakhir = index.pemeliharaanTerakhir ? index.pemeliharaanTerakhir : '-';
+      let pemeliharaanTerakhir = index.pemeliharaanTerakhir;
+
+      if(!pemeliharaanTerakhir){
+        pemeliharaanTerakhir = '-'
+      }
+      // let pemeliharaanTerakhir = index.pemeliharaanTerakhir ? index.pemeliharaanTerakhir : '-';
+      let tanggal = pemeliharaanTerakhir.slice(0, 10)
+      let waktu = pemeliharaanTerakhir.slice(11, -5)
       tabelData += `
           <tr>
             <td>${noRow}</td>
-            <td>
+            <td class="styleBtn">
               <a href="./edit.html">
                 <button onClick="editBtn('${index.uuid}')"><i class="fa fa-edit"></i></button>
               </a>
@@ -65,12 +86,22 @@ function tableData(apiData) {
             <td class="serial-num"><a href="detail.html">${noSerial}</a></td>
             <td>${keypoint}</td>
             <td>${link}</td>
-            <td>${pemeliharaanTerakhir}</td>
+            <td>${tanggal} ${waktu}</td>
           </tr>`
     })
   }
-  $("#tableBody").html(tabelData);
+  $("#tableData").html(tabelData);
 }
+
+function loader() {
+  let tabel = `
+  <tr>
+    <td colspan="7"><img src="./assets/img/loading.svg" alt=""></td> 
+  </tr>
+  `
+  $("#tableData").html(tabel);
+}
+
 
 //-----------------------------------------fetch api
 // var myHeaders = new Headers();
