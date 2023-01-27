@@ -10,7 +10,7 @@ if (!tokenData) {
     showCancelButton: false,
     showConfirmButton: true,
   }).then(function(){
-    window.location.href = "/login.html";
+    window.location.href = "../login.html";
   })
 }
 
