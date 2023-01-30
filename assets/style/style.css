@@ -135,11 +135,15 @@ th, td {
     padding: 10px;
 }
 
-.serial-num a{
+.serial-num button{
     text-decoration: none;
     color: #125D72;
     font-family: "Nunito", sans-serif;
     font-weight: 700;
+}
+
+.serial-num a {
+    cursor: pointer;
 }
   
 thead{
@@ -176,6 +180,8 @@ tbody tr button {
 
 tbody td {
     font-size: 15px;
+    background: transparent;
+    border: none;
 }
 
 tbody tr td.styleBtn {
@@ -313,7 +319,7 @@ tbody tr td.styleBtn {
         height: 40px;
     }
     
-    .serial-num a{
+    .serial-num button{
         color: #125D72;
         font-weight: 400;
         font-size: 13px;

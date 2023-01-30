@@ -13,6 +13,9 @@
 
     <!-- Java Script -->
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="./assets/js/detailData.js"></script>
+    <!-- <script src="./assets/js/main.js"></script> -->
+
     
     <!-- icon -->
     <link href="assets/img/Logo_PLN.png" rel="shortcut icon">
@@ -45,7 +48,9 @@
 
     <div id=btnWrap class="btn-wrapper">
         <div class="editbtn">
-            <button id="btnEdit"><i class="fa fa-edit"></i> Edit Data</button>
+            <a href="edit.html">
+            <button id="btnEdit" onclick="updateData()"><i class="fa fa-edit"></i> Edit Data</button>
+            </a>
         </div>
         <div class="deletebtn">
             <button id="btnDelete"><i class="fa fa-trash"></i> Hapus</button>
@@ -56,55 +61,49 @@
         <div class="view-detail">
             <div class="light">
                 <p class="desc-title">No Serial</p>
-                <p class="desc-mat">463T698</p>
-            </div>
-        </div>
-        <div class="view-detail">
-            <div class="dark-img">
-                <p class="desc-title">Gambar material</p>
-                <p class="desc-mat"><img src="./assets/img/D121191030.png"></p>
-            </div>
-        </div>
-        <div class="view-detail">
-            <div class="light">
-                <p class="desc-title">Keypoint</p>
-                <p class="desc-mat">LBS Ahmad Yani</p>
+                <p class="desc-mat"  id="no-Serial">463T698</p>
             </div>
         </div>
         <div class="view-detail">
             <div class="dark">
-                <p class="desc-title">Merk RTU</p>
-                <p class="desc-mat">None</p>
+                <p class="desc-title">Keypoint</p>
+                <p class="desc-mat" id="keypoint">LBS Ahmad Yani</p>
             </div>
         </div>
         <div class="view-detail">
             <div class="light">
+                <p class="desc-title">Merk RTU</p>
+                <p class="desc-mat" id="merek-RTU">None</p>
+            </div>
+        </div>
+        <div class="view-detail">
+            <div class="dark">
                 <p class="desc-title">Jenis Peralatan</p>
-                <p class="desc-mat">LBS</p>
+                <p class="desc-mat" id="jenis-Peralatan">LBS</p>
             </div>
         </div>
         <div class="view-detail">
             <div class="light">
                 <p class="desc-title">Komunikasi</p>
-                <p class="desc-mat">Radio</p>
+                <p class="desc-mat" id="komunikasi">Radio</p>
             </div>
         </div>
         <div class="view-detail">
-            <div class="light">
+            <div class="dark">
                 <p class="desc-title">Link</p>
-                <p class="desc-mat">None</p>
+                <p class="desc-mat" id="link">None</p>
             </div>
         </div>
         <div class="view-detail">
             <div class="light">
                 <p class="desc-title">Tegangan Kerja</p>
-                <p class="desc-mat">None</p>
+                <p class="desc-mat" id="tegangan-RTU">None</p>
             </div>
         </div>
         <div class="view-detail">
             <div class="dark">
                 <p class="desc-title">Pemeliharaan terakhir</p>
-                <p class="desc-mat">11/11/2022</p>
+                <p class="desc-mat" id="pemeliharaanTerakhir">11/11/2022</p>
             </div>
         </div>
 
@@ -145,6 +144,8 @@
         </div>
     </footer>
 
-    <script src="./assets/js/main.js"></script>
+
+
+
 </body>
 </html>

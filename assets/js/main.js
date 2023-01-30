@@ -23,3 +23,6 @@ function btnBack() {
         let btn = document.getElementById("btnWrap")
         btn.style.display = 'none'
     } 
+
+
+// DataTable

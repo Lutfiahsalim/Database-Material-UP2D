@@ -27,6 +27,7 @@
     justify-content: flex-start;
     padding-left: 63px;
     padding-bottom: 0;
+    font-family: "Nunito", sans-serif;
 }
 
 .btn-wrapper .editbtn{
@@ -41,11 +42,8 @@
     color: #efe62f	;
     font-weight: 600;
     font-size: 15px;
-    text-decoration: none;
     background: transparent;
     border: none;
-    font-family: "Nunito", sans-serif;
-
 }
 
 .btn-wrapper .deletebtn {
@@ -62,7 +60,6 @@
     text-decoration: none;
     background: transparent;
     border: none;
-    font-family: "Nunito", sans-serif;
 }
 
 /* ----------------DETAIL------------- */

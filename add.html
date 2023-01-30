@@ -12,7 +12,10 @@
     <link rel="stylesheet" href="./assets/style/add.css">
 
     <!-- Java Script -->
-    <script src="./assets/js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- <script src="./assets/js/main.js"></script> -->
+    <script src="./assets/js/insertData.js"></script>
 
     <!-- icon -->
     <link href="assets/img/Logo_PLN.png" rel="shortcut icon">
@@ -43,29 +46,22 @@
         <p>Lakkukan penambahan data disini!</p>
    </div>
 
-   <div class="form-edit">
+   <div class="form-edit" id="formAdd">
     <div class="form-wrapper">
         <label for="user">No Serial</label> <br>
-        <input type="text" id="user-form" placeholder="Masukkan nomor serial"> <br>
+        <input type="text" id="noSerial" class="user-form" placeholder="Masukkan nomor serial"> <br>
     </div>
     <div class="form-wrapper">
-        <label for="password">Gambar material</label> <br>
-        <div class="input-image">
-            <input type="text" id="user-form" placeholder="qr_code.png">
-            <a href="#"><i class="fa fa-upload fa-lg"></i>Upload gambar</a>
-        </div>
-    </div>
-    <div class="form-wrapper">
-        <label for="user">Nama titik RC/Link</label> <br>
-        <input type="text" id="user-form" placeholder="Masukkan titik RC/Link material"> <br>
+        <label for="user">keypoint</label> <br>
+        <input type="text" id="keypoint" class="user-form" placeholder="Masukkan titik RC/Link material"> <br>
     </div>
     <div class="form-wrapper">
         <label for="user">Merk RTU</label> <br>
-        <input type="text" id="user-form" placeholder="Masukkan merk RTU material"> <br>
+        <input type="text" id="merekRTU" class="user-form" placeholder="Masukkan merk RTU material"> <br>
     </div>
     <div class="form-wrapper">
         <label for="user">Jenis Peralatan</label> <br>
-        <select name="peralatan" id="peralatan">
+        <select name="peralatan" id="jenisPeralatan">
             <option value="lbs">LBS</option>
             <option value="recloser">Recloser</option>
             <option value="gi">GI</option>
@@ -77,15 +73,15 @@
     </div>
     <div class="form-wrapper">
         <label for="user">Komunikasi</label> <br>
-        <input type="text" id="user-form" placeholder="Masukkan media komunikasi material"> <br>
+        <input type="text" id="komunikasi" class="user-form" placeholder="Masukkan media komunikasi material"> <br>
     </div>
     <div class="form-wrapper">
         <label for="user">Link</label> <br>
-        <input type="text" id="user-form" placeholder="Masukkan link radio material"> <br>
+        <input type="text" id="link" class="user-form" placeholder="Masukkan link radio material"> <br>
     </div>
     <div class="form-wrapper">
         <label for="user">Tegangan Kerja</label> <br>
-        <input type="text" id="user-form" placeholder="Masukkan tegangan kerja material"> <br>
+        <input type="text" id="teganganRTU" class="user-form" placeholder="Masukkan tegangan kerja material"> <br>
     </div>
     <div class="form-wrapper">
         <label for="user">Pemeliharaan</label> <br>
@@ -97,8 +93,8 @@
     </div>
 
     <div class="btn-save">
-            <a class="addbtn" href="index.html">Tambahkan Data</a>
-            <a class="cancelbtn" href="add.html">Batal</a>
+            <button id="btnAdd" class="addbtn" type="submit">Tambahkan Data</button>
+            <button class="cancelbtn" href="add.html">Batal</>
         </div>
     </div>
 

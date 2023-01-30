@@ -11,7 +11,8 @@
     <link rel="stylesheet" href="./assets/style/edit.css">
 
     <!-- Java Script -->
-    <script src="./assets/js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="./assets/js/updateData.js"></script>
 
     <!-- icon -->
     <link href="assets/img/Logo_PLN.png" rel="shortcut icon">
@@ -46,26 +47,19 @@
    <div class="form-edit">
     <div class="form-wrapper">
         <label for="user">No Serial</label> <br>
-        <input type="text" id="user-form" placeholder="Masukkan nomor serial yang baru"> <br>
+        <input type="text" id="noSerial" class="user-form" placeholder="Masukkan nomor serial yang baru"> <br>
     </div>
     <div class="form-wrapper">
-        <label for="password">Gambar material</label> <br>
-        <div class="input-image">
-            <input type="text" id="user-form" placeholder="qr_code.png">
-            <a href="#"><i class="fa fa-upload fa-lg"></i>Upload gambar</a>
-        </div>
-    </div>
-    <div class="form-wrapper">
-        <label for="user">Nama titik RC/Link</label> <br>
-        <input type="text" id="user-form" placeholder="Masukkan titik RC/Link material yang baru"> <br>
+        <label for="user">Keypoint</label> <br>
+        <input type="text" id="keypoint" class="user-form" placeholder="Masukkan titik RC/Link material yang baru"> <br>
     </div>
     <div class="form-wrapper">
         <label for="user">Merk RTU</label> <br>
-        <input type="text" id="user-form" placeholder="Masukkan merk RTU yang baru"> <br>
+        <input type="text" id="merk_rtu" class="user-form" placeholder="Masukkan merk RTU yang baru"> <br>
     </div>
     <div class="form-wrapper">
         <label for="user">Jenis Peralatan</label> <br>
-        <select name="peralatan" id="peralatan">
+        <select id="peralatan" class="peralatan">
             <option value="lbs">LBS</option>
             <option value="recloser">Recloser</option>
             <option value="gi">GI</option>
@@ -77,23 +71,23 @@
     </div>
     <div class="form-wrapper">
         <label for="user">Komunikasi</label> <br>
-        <input type="text" id="user-form" placeholder="Masukkan media komunikasi material yang baru"> <br>
+        <input type="text" id="komunikasi" class="user-form" placeholder="Masukkan media komunikasi material yang baru"> <br>
     </div>
     <div class="form-wrapper">
         <label for="user">Link</label> <br>
-        <input type="text" id="user-form" placeholder="Masukkan link radio material yang baru"> <br>
+        <input type="text" id="link" class="user-form" placeholder="Masukkan link radio material yang baru"> <br>
     </div>
     <div class="form-wrapper">
         <label for="user">Tegangan Kerja</label> <br>
-        <input type="text" id="user-form" placeholder="Masukkan tegangan kerja material yang baru"> <br>
+        <input type="text" id="tegangan_kerja" class="user-form" placeholder="Masukkan tegangan kerja material yang baru"> <br>
     </div>
     <div class="form-wrapper">
         <label for="user">Pemeliharaan terakhir</label> <br>
         <div class="input-datetime">
             <input type="date" id="start" name="trip-start"
-                value="0000-00-00"
-                min="2018-01-01" max="2022-12-31"> <br>
-        </div>
+            value="0000-00-00"
+            min="2018-01-01" max="2022-12-31"> <br>
+    </div>
     </div>
 
         <div class="btn-save">
