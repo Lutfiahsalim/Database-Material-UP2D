@@ -12,7 +12,11 @@
 
     <!-- Java Script -->
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="./assets/js/updateData.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.all.min.js"></script>  -->
+    <!-- iconn -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 
     <!-- icon -->
     <link href="assets/img/Logo_PLN.png" rel="shortcut icon">
@@ -40,7 +44,7 @@
    </div>
 
    <div class="title-page">
-        <h2>DETAIL MATERIAL</h2>
+        <h2>UPDATE MATERIAL</h2>
         <p>Update data yang kamu pilih!</p>
    </div>
 
@@ -59,15 +63,63 @@
     </div>
     <div class="form-wrapper">
         <label for="user">Jenis Peralatan</label> <br>
-        <select id="peralatan" class="peralatan">
+        <!-- <select id="peralatan" class="peralatan">
             <option value="lbs">LBS</option>
             <option value="recloser">Recloser</option>
             <option value="gi">GI</option>
             <option value="gh">GH</option>
             <option value="fi">FI</option>
             <option value="link">Link</option>
-        </select>
-        <!-- <input type="text" id="user-form" placeholder="Masukkan jenis peralatan material yang baru"> <br> -->
+        </select> -->
+            <div id="peralatan" class="select_wrap">
+                <ul class="default_option">
+                    <div class="icon">
+                        <ion-icon name="chevron-down-outline"></ion-icon>
+                    </div>
+                    <li>
+                        <div class="option">
+                            <p>LBS</p>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="select_ul">
+                    <li class="active">
+                        <div class="option">
+                            <p>LBS</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="option">
+                            <p>Recloser</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="option">
+                            <p>GH</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="option">
+                            <p>GI</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="option">
+                            <p>FI</p>
+                        </div>
+                    </li>
+                </ul>
+            <!-- </div>  -->
+                   
+            <!-- <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              pilih
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+              <button class="dropdown-item" type="button">LBS</button>
+              <button class="dropdown-item" type="button">Recloser</button>
+              <button class="dropdown-item" type="button">GI</button>
+            </div> -->
+    </div>
     </div>
     <div class="form-wrapper">
         <label for="user">Komunikasi</label> <br>
@@ -83,16 +135,23 @@
     </div>
     <div class="form-wrapper">
         <label for="user">Pemeliharaan terakhir</label> <br>
-        <div class="input-datetime">
-            <input type="date" id="start" name="trip-start"
+        <div class="input-datetime" id="pemeliharaanTerakhir">
+            <input type="datetime" id="start" name="trip-start"
             value="0000-00-00"
             min="2018-01-01" max="2022-12-31"> <br>
-    </div>
+        </div>
+        <!-- <div class="input-datetime" id="pemeliharaanTerakhir">
+            <input type="text"> <br>
+        </div> -->
     </div>
 
-        <div class="btn-save">
-            <a class="savebtn" href="index.html">Simpan perubahan</a>
-            <a class="cancelbtn" href="edit.html">Batal </a>
+        <div class="btn-wrap">
+            <div class="savebtn">
+                <button id="saveEditBtn" onclick="">Simpan perubahan</button>
+            </div>
+            <div class="cancelbtn">
+                <button id="delBtn" onclick="">Batal</button>
+            </div>
         </div>
     </div>
 

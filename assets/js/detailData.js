@@ -47,7 +47,7 @@ function showData(product) {
   }
 
   let tanggal = pemeliharaanTerakhir.slice(0, 10)
-  let waktu = pemeliharaanTerakhir.slice(11, -5)
+  let waktu = pemeliharaanTerakhir.slice(0, -14)
 
   $("#no-Serial").html(noSerial ?? "-");
   $("#keypoint").html(keypoint ?? "-");

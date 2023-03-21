@@ -20,7 +20,6 @@
 /* -------------TABEL------------- */
 .cover-back {
     width: 90vw;
-    /* height: 1600px; */
     margin: 30px auto;
     background: #E7F6F9;
     border-radius: 25px;
@@ -34,7 +33,6 @@
 
 .top-table .btn-wrapper {
     width: 274px;
-    /* background-color: #4506f3; */
     display: flex;
     justify-content: space-evenly;
 }
@@ -42,11 +40,9 @@
 /* ----------------Searching-------------  */
 .search{
     width: 540px;
-    /* width: 70%; */
     height: 45px;
     background: #14A2BA;
     border-radius: 12px;
-    /* padding-right: 0px 4px 8px rgba(0, 0, 0, 0.25); */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -72,6 +68,9 @@
     color: #EFE62F;
     font-size: 1.25em;
 }
+
+/* datatables-search */
+
 
 /* -----------Download----------- */
 
@@ -123,6 +122,10 @@
 }
 
 /* ------------Table----------- */
+.dataTable no-footer {
+    width: 100%;
+}
+
 table {
     border-collapse: collapse;
     border-spacing: 0;

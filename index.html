@@ -11,13 +11,9 @@
     <link rel="stylesheet" href="./assets/style/template.css">
 
     <!-- Java Script -->
-    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="//cdn.datatables.net/1.13.2/js/jquery.dataTables.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script> 
-    
-    <!-- <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.1/css/jquery.dataTables.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.js"></script> -->
-
     
     <!-- icon -->
     <link href="assets/img/Logo_PLN.png" rel="shortcut icon">
@@ -60,8 +56,7 @@
 
             <div class="btn-wrapper">
                 <div class="btn-add">
-                    <button id="addData"><a href="add.html"></a> Tambah Data</button>
-                    <!-- <a href="add.html">Tambah Data</a> -->
+                    <a href="add.html"><button id="addData"> Tambah Data</button></a>
                 </div>
                 <div class="btn-download">
                     <button id="btnDown"><i class="fa fa-download"></i> Download</button>
@@ -69,16 +64,16 @@
             </div>
         </div>
 
-        <div class="d-flex justify-content-center">
+        <!-- <div class="d-flex justify-content-center">
             <div class="spinner-border" 
                  role="status" id="loading">
                 <span class="sr-only">Loading...</span>
             </div>
-        </div>
+        </div> -->
 
         <div class="cover-table">
             <div style="overflow-x:auto;">
-                <table id="tableBody">
+                <table id="tableData_Showdata">
                     <thead>
                     <tr>
                         <th scope="col">No</th>
@@ -89,7 +84,7 @@
                         <th scope="col">Pemeliharaan terakhir</th>
                     </tr>
                     </thead>
-                    <tbody id="tableData"></tbody>
+                    <tbody id="showData_TableBody"></tbody>
                     <!-- <tr>
                         <td></td>
                         <td>
@@ -106,13 +101,13 @@
             </div>
         </div>
 
-        <div class="pagination">
+        <!-- <div class="pagination">
             <a href="#"><i class="fa fa-caret-left"></i></a>
             <a href="#" class="active">1</a>
             <a href="#">2</a>
             <a href="#">3</a>
             <a href="#"><i class="fa fa-caret-right"></i></a>
-        </div>
+        </div> -->
     </div>
 
     <footer>
