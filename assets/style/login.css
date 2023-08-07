@@ -1,0 +1,195 @@
+/* ---------------------LOGIN----------------------
+------------------------------------------------ */
+
+#login {
+    /* margin: 80px 200px 50px 230px; */
+    width: 70%;
+    margin: 50px auto;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+}
+
+.left-content {
+    padding-right: 70px;
+}
+
+.right-content {
+    padding-left: 80px;
+}
+
+.welc-greeting h2 {
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 35px;
+    color: #125D72;
+    margin: 0;
+}
+
+.welc-greeting p {
+    font-family: 'Nunito', sans-serif; 
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #BBBBBB;
+    margin: 0;
+}
+
+.formLogin {
+    margin-top: 40px;
+}
+
+.formLogin label {
+    color: #125D72;
+    font-weight: 600;
+}
+
+.formLogin input {
+    margin: 10px 0 20px 0;
+    width: 450px;
+    padding: 12px;
+    border: 1px solid #BBBBBB;
+    /* border-style: solid; */
+    border-radius: 10px;
+    color: #14A2BA;
+    font-size: 15px;
+    font-family: "Nunito", sans-serif;
+}
+
+input:hover, input:focus { 
+    border-color: #14A2BA;
+} 
+
+input[type="text"]:focus {
+    border: 1px solid #14A2BA;
+    outline: none;
+    color: #14A2BA;
+    padding: 12px;
+}
+
+input[type="password"]:focus {
+    border: 1px solid #14A2BA;
+    outline: none;
+    color: #14A2BA;
+    padding: 12px;
+}
+
+/* .formLogin input::placeholder {
+    opacity: 0.5;
+    color: #BBBBBB;
+    font-family: "Nunito", sans-serif;
+    font-weight: 200;
+    font-size: 15px;
+} */
+
+.formLogin :placeholder-shown {
+    padding: 12px;
+}
+
+.formLogin ::placeholder {
+    font-size: 15px;
+    font-family: "Nunito", sans-serif;
+    color: rgba(18, 93, 114, 0.43);
+}
+
+.btn-login {
+    background-color: #125D72;
+    width: 450px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.btn-login button{
+    text-decoration: none;
+    font-family: "Nunito", sans-serif;
+    font-size: 18px;
+    color: #EFE62F;
+    font-weight: 600;
+    padding-left: 200px;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+@media (max-width: 425px) {
+    #login {
+        /* margin: 80px 200px 50px 230px; */
+        width: 80%;
+        margin: auto;
+    }
+    
+    .content {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        padding-top: 25px;
+    }
+    
+    .left-content {
+        padding-right: 0;
+    }
+    
+    .right-content {
+        padding-right: 30px;
+    }
+
+    .welc-greeting h2 {
+        font-weight: 800;
+        font-size: 30px;
+    }
+    
+    .welc-greeting p {
+        font-weight: 300;
+        font-size: 12px;
+        padding-bottom: 18px;
+    }
+    
+    .formLogin {
+        margin-top: auto;
+    }
+    
+    .formLogin label {
+        color: #125D72;
+        font-weight: 500;
+        font-size: 14px;
+    }
+    
+    .formLogin input {
+        width: 250px;
+        height: 15px;
+        border-radius: 10px;
+        color: #14A2BA;
+        font-size: 14px;
+        padding-left: 15px;
+    }
+
+    input[type="text"]:focus {
+        border: 1px solid #14A2BA;
+    }
+    
+    input[type="password"]:focus {
+        border: 1px solid #14A2BA;
+    }
+    
+    .formLogin input::placeholder {
+        font-size: 13px;
+    }
+    
+    .btn-login {
+        background-color: #125D72;
+        width: 250px;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    
+    .btn-login button{
+        font-size: 14px;
+        color: #EFE62F;
+        font-weight: 400;
+        padding-left: 100px;
+    }
+}
+

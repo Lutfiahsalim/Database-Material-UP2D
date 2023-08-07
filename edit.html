@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>datar // edit</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/style/template.css">
+    <link rel="stylesheet" href="./assets/style/edit.css">
+
+    <!-- Java Script -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./assets/js/updateData.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.all.min.js"></script>  -->
+    <!-- iconn -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+
+    <!-- icon -->
+    <link href="assets/img/Logo_PLN.png" rel="shortcut icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+           <div class="navbar">
+               <div class="col-md-2 nav" value="fit-content">
+                    <h3 class="logo"><button id="btnLogo" onclick="">datar.</button></h3>
+                    <p class="">PLN UP2D MAKASSAR</p>
+               </div>
+               
+                <div class="btn-profile dropdown">
+                    <button class="dropbtn"><i class="fa fa-user fa-lg"></i></button>
+                        <div class="dropdown-content">
+                            <a href="login.html"><i class="fa fa-sign-out fa-sm"></i> Logout</a>
+                        </div>
+                </div>
+
+           </div>
+       </div>
+   </div>
+
+   <div class="title-page">
+        <h2>UPDATE MATERIAL</h2>
+        <p>Update data yang kamu pilih!</p>
+   </div>
+
+   <div class="form-edit">
+    <div class="form-wrapper">
+        <label for="user">No Serial</label> <br>
+        <input type="text" id="noSerial" class="user-form" placeholder="Masukkan nomor serial yang baru"> <br>
+    </div>
+    <div class="form-wrapper">
+        <label for="user">Keypoint</label> <br>
+        <input type="text" id="keypoint" class="user-form" placeholder="Masukkan titik RC/Link material yang baru"> <br>
+    </div>
+    <div class="form-wrapper">
+        <label for="user">Merk RTU</label> <br>
+        <input type="text" id="merk_rtu" class="user-form" placeholder="Masukkan merk RTU yang baru"> <br>
+    </div>
+    <div class="form-wrapper">
+        <label for="user">Jenis Peralatan</label> <br>
+        <div class="dropdown">
+            <button class="dropdown-button" onclick="toggleDropdown()">Pilih jenis peralatan</button>
+            <div class="dropdown-content" id="dropdownContent">
+                <a href="#" onclick="selectOption('LBS')">LBS</a>
+                <a href="#" onclick="selectOption('Recloser')">Recloser</a>
+                <a href="#" onclick="selectOption('GH')">GH</a>
+                <a href="#" onclick="selectOption('GI')">GI</a>
+                <a href="#" onclick="selectOption('FI')">FI</a>
+            </div>
+        </div>
+        <input type="hidden" id="jenis_peralatan" name="selectedValue">
+    </div>
+    <div class="form-wrapper">
+        <label for="user">Komunikasi</label> <br>
+        <input type="text" id="komunikasi" class="user-form" placeholder="Masukkan media komunikasi material yang baru"> <br>
+    </div>
+    <div class="form-wrapper">
+        <label for="user">Link</label> <br>
+        <input type="text" id="link" class="user-form" placeholder="Masukkan link radio material yang baru"> <br>
+    </div>
+    <div class="form-wrapper">
+        <label for="user">Tegangan Kerja</label> <br>
+        <input type="text" id="tegangan_kerja" class="user-form" placeholder="Masukkan tegangan kerja material yang baru"> <br>
+    </div>
+    <div class="form-wrapper">
+        <label for="user">Pemeliharaan</label> <br>
+        <div class="input-datetime">
+            <input id="pemeliharaanTerakhir" type="date" id="start" name="trip-start"
+                value="0000-00-00"
+                min="2018-01-01" max="2022-12-31"> <br>
+        </div>
+    </div>
+
+        <div class="btn-wrap">
+            <div class="savebtn">
+                <button id="saveEditBtn" onclick="">Simpan perubahan</button>
+            </div>
+            <div class="cancelbtn">
+                <button id="delBtn" onclick="">Batal</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer">
+            <div class="row">
+                <div class="col datar-desc">
+                    <h3 class="logo">datar.</h3>
+                    <p class="gray-desc">Mengakses database material UP2D Makassar dengan mudah</p>
+                </div>
+
+                <div class="contact">
+                    <p class="point-foot">Service</p>
+                    <li><a href="#">SINOPI</a></li>
+                </div>
+
+                <div class="contact">
+                    <p class="point-foot">Contact</p>
+                    <div class="contact-point">
+                        <li><a href="#">DCC Utara</a></li>
+                        <li><a href="#">DCC Selatan</a></li>
+                        <li><a href="#">Master Station</a></li>
+                    </div>
+                </div>
+
+                <div class="location">
+                    <p class="point-foot">Location</p>
+                    <li><a href="#">PLN UP2D Makassar</a></li>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <hr>
+                <p class="copyright-text">© 2020 Copyright : PLN UP2D MAKASSAR</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

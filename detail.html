@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>datar. // details</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/style/template.css">
+    <link rel="stylesheet" href="./assets/style/detail.css">
+    <!-- <link rel="stylesheet" href="./assets/style/style.css"> -->
+
+    <!-- Java Script -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="./assets/js/detailData.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script> 
+    <!-- <script src="./assets/js/main.js"></script> -->
+
+    
+    <!-- icon -->
+    <link href="assets/img/Logo_PLN.png" rel="shortcut icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+           <div class="navbar">
+               <div class="col-md-2 nav" value="fit-content">
+                    <h3 class="logo"><button id="btnLogo">datar.</button></h3>
+                    <p class="">PLN UP2D MAKASSAR</p>
+               </div>
+               
+                <div class="btn-profile dropdown">
+                    <button class="dropbtn"><i class="fa fa-user fa-lg"></i></button>
+                        <div class="dropdown-content">
+                            <a href="login.html"><i class="fa fa-sign-out fa-sm"></i> Logout</a>
+                        </div>
+                </div>
+           </div>
+       </div>
+   </div>
+
+   <div class="title-page">
+        <h2>DETAIL MATERIAL</h2>
+        <p>Lihat detail Keypoint yang kamu scan!</p>
+    </div>
+
+    <div class="btn-wrapper">
+        <!-- <div class="editbtn">
+            <a href="edit.html">
+                <button id="btnEdit" onclick=""><i class="fa fa-edit"></i> Edit Data</button>
+            </a>
+        </div>
+        <div class="deletebtn">
+            <button id="btnDelete" onclick="deleteBtn()"><i class="fa fa-trash"></i> Hapus</button>
+        </div> -->
+
+        <div class="editbtn">
+            <button id="btnEdit" onclick="redirectToEditPage()"><i class="fa fa-edit"></i> Edit Data</button>
+        </div>
+        <div class="deletebtn">
+            <button id="btnDelete" onclick="deleteBtn()"><i class="fa fa-trash"></i> Hapus</button>
+        </div>
+
+    </div>
+
+    <div class="detail">
+        <div class="view-detail">
+            <div class="light">
+                <p class="desc-title">No Serial</p>
+                <p class="desc-mat"  id="no-Serial">463T698</p>
+            </div>
+        </div>
+        <div class="view-detail">
+            <div class="dark">
+                <p class="desc-title">Keypoint</p>
+                <p class="desc-mat" id="keypoint">LBS Ahmad Yani</p>
+            </div>
+        </div>
+        <div class="view-detail">
+            <div class="light">
+                <p class="desc-title">Merk RTU</p>
+                <p class="desc-mat" id="merek-RTU">None</p>
+            </div>
+        </div>
+        <div class="view-detail">
+            <div class="dark">
+                <p class="desc-title">Jenis Peralatan</p>
+                <p class="desc-mat" id="jenis_peralatan">LBS</p>
+            </div>
+        </div>
+        <div class="view-detail">
+            <div class="light">
+                <p class="desc-title">Komunikasi</p>
+                <p class="desc-mat" id="komunikasi">Radio</p>
+            </div>
+        </div>
+        <div class="view-detail">
+            <div class="dark">
+                <p class="desc-title">Link</p>
+                <p class="desc-mat" id="link">None</p>
+            </div>
+        </div>
+        <div class="view-detail">
+            <div class="light">
+                <p class="desc-title">Tegangan Kerja</p>
+                <p class="desc-mat" id="tegangan-RTU">None</p>
+            </div>
+        </div>
+        <div class="view-detail">
+            <div class="dark">
+                <p class="desc-title">Pemeliharaan terakhir</p>
+                <p class="desc-mat" id="pemeliharaanTerakhir">11/11/2022</p>
+            </div>
+        </div>
+
+    </div>
+    
+    <footer>
+        <div class="footer">
+            <div class="row">
+                <div class="col datar-desc">
+                    <h3 class="logo">datar.</h3>
+                    <p class="gray-desc">Mengakses database material UP2D Makassar dengan mudah</p>
+                </div>
+
+                <div class="contact">
+                    <p class="point-foot">Service</p>
+                    <li><a href="#">SINOPI</a></li>
+                </div>
+
+                <div class="contact">
+                    <p class="point-foot">Contact</p>
+                    <div class="contact-point">
+                        <li><a href="#">DCC Utara</a></li>
+                        <li><a href="#">DCC Selatan</a></li>
+                        <li><a href="#">Master Station</a></li>
+                    </div>
+                </div>
+
+                <div class="location">
+                    <p class="point-foot">Location</p>
+                    <li><a href="#">PLN UP2D Makassar</a></li>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <hr>
+                <p class="copyright-text">© 2020 Copyright : PLN UP2D MAKASSAR</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+</body>
+</html>

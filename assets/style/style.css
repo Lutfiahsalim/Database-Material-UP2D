@@ -1,0 +1,361 @@
+/* ------------------WELCOME GREETING-------------------- */
+.greeting h2 {
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    color: #125D72;
+    margin: 50px 0 0 80px;
+}
+
+.greeting p {
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: #BBBBBB;
+    margin: 0 80px;
+}
+
+/* -------------TABEL------------- */
+.cover-back {
+    width: 90vw;
+    margin: 30px auto;
+    background: #E7F6F9;
+    border-radius: 25px;
+}
+
+.top-table {
+    display: flex;
+    justify-content: flex-end;
+    padding: 30px 60px;
+}
+
+.top-table .btn-wrapper {
+    width: 274px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* ----------------Searching-------------  */
+.search{
+    width: 540px;
+    height: 45px;
+    background: #14A2BA;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 23px;
+}
+
+.search :placeholder-shown {
+    border: none;
+    background: none;
+    margin-left: 20px;
+}
+
+.search input::placeholder {
+    opacity: .75;
+    color: #125D72;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 200;
+    font-size: 16px;
+    justify-content: center;
+}
+
+.search i {
+    color: #EFE62F;
+    font-size: 1.25em;
+}
+
+/* datatables-search */
+
+
+/* -----------Download----------- */
+
+.btn-add button{
+    padding: 12px 15px;
+    background-color: #14A2BA;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgb(0 0 0 / 25%);
+    color: #E7F6F9;
+    font-family: "Nunito", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-download button{
+    padding: 8px 15px;
+    background-color: #14A2BA;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgb(0 0 0 / 25%);
+    text-decoration: none;
+    color: #EFE62F;
+    font-family: "Nunito", sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.btn-download i {
+    color: #EFE62F;
+    padding: 0.6em 0.5em 0.2em 0;
+}
+
+/* .btn-download a{
+    text-decoration: none;
+    color: #EFE62F;
+    font-family: "Nunito", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    padding-right: 0.5em;
+} */
+
+.cover-table {
+    background-color: #E7F6F9;
+    padding: 0 60px 50px;
+
+}
+
+/* ------------Table----------- */
+.dataTable no-footer {
+    width: 100%;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    /* overflow-x: auto; */
+}
+  
+th, td {
+    text-align: center;
+    padding: 10px;
+}
+
+.serial-num button{
+    text-decoration: none;
+    color: #125D72;
+    font-family: "Nunito", sans-serif;
+    font-weight: 700;
+}
+
+.serial-num a {
+    cursor: pointer;
+}
+  
+thead{
+    background-color: #14A2BA;
+}
+
+tbody tr:nth-child(even){
+    background-color: #c3e0e97d;
+}
+
+tbody tr:hover {
+    background-color: #14A2BA;
+}
+
+
+table .fa-edit {
+    color: #EFE62F;
+    text-decoration: none;
+    border: none;
+    font-size: 1.25em;
+}
+
+table .fa-trash {
+    color: red;
+    font-size: 1.25em;
+    text-decoration: none;
+    border: none;
+}
+
+tbody tr button {
+    background: transparent;
+    border: none;
+}
+
+tbody td {
+    font-size: 15px;
+    background: transparent;
+    border: none;
+}
+
+tbody tr td.styleBtn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 0 0 0;
+}
+
+tbody img {
+    width: 110px;
+}
+
+/* -------------PAGINATION-------------- */
+.pagination {
+    display: inline-block;
+    /* margin-left: 550px; */
+    padding-top: 30px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+  }
+  
+.pagination a {
+    color: #14A2BA;
+    float: center;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+  
+.pagination a.active {
+    color: #125D72;
+    border-radius: 5px;
+}
+  
+.pagination a:hover:not(.active) {
+    background-color: #125D72;
+    border-radius: 5px;
+}
+
+
+@media (max-width: 425px) {
+    .greeting h2 {
+        font-weight: 600;
+        font-size: 25px;
+        margin: 25px 0 0 30px;
+    }
+    
+    .greeting p {
+        font-weight: 200;
+        font-size: 12px;
+        margin: 0 30px;
+    }
+    .top-table {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        padding: 10px 25px;
+    }
+
+    .top-table .btn-wrapper {
+        width: 274px;
+        display: flex;
+        margin: 20px 0 10px 0;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .cover-table {
+        padding: 10px;
+    }
+
+    /* .search {
+        width: 280px;
+        height: 32px;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-right: 11px;
+    } */
+
+  
+    /* .search :placeholder-shown {
+        margin-left: 15px;
+    }
+    
+    .search input::placeholder {
+        font-size: 12px;
+    }
+    
+    .search i {
+        color: #EFE62F;
+        font-size: 0.8em;
+
+    } */
+
+    .btn-add button{
+        font-size: 12px;
+        border-radius: 10px;
+        margin-right: 6px;
+        
+    }
+    
+    .btn-download button{
+        font-size: 12px;
+        border-radius: 10px;
+        padding: 12px 15px;
+    }
+    .btn-download i {
+        color: #EFE62F;
+        padding-right: 0.5em;
+        padding-top: 0;
+        font-size: 0.8em;
+    }
+
+    table {
+        /* border-collapse: collapse;
+        border-spacing: 0; */
+        width: 80%;
+        /* margin: auto;
+        overflow-x: auto; */
+    }
+      
+    th {
+        text-align: center;
+        padding: 12px;
+        font-size: 12px;
+    }
+
+    td {
+        text-align: center;
+        padding: 4px;
+        font-size: 13px;
+    }
+
+    td img {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .serial-num button{
+        color: #125D72;
+        font-weight: 400;
+        font-size: 13px;
+    
+    }
+      
+    tr:nth-child(even){
+        background-color: #14A2BA;
+    }
+    
+    table .fa-edit {
+        font-size: 1.25em;
+        color: #EFE62F;
+        text-decoration: none;
+    }
+    
+    table .fa-trash {
+        font-size: 1.25em;
+        color: red;
+    }
+    
+    .pagination a {
+        color: #14A2BA;
+        float: center;
+        font-size: 12px;
+        padding: 8px 16px;
+        text-decoration: none;
+    }
+}
