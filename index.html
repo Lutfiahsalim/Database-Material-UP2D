@@ -9,11 +9,19 @@
     <!-- CSS -->
     <link rel="stylesheet" href="./assets/style/style.css">
     <link rel="stylesheet" href="./assets/style/template.css">
+    <link rel="stylesheet" href="./assets/DataTables/datatables.min.css">
+    <link rel="stylesheet" href="./assets/DataTables/DataTables-1.13.6/css/dataTables.bootstrap.css">
+    <!-- <link href="./DataTables/datatables.min.css" rel="stylesheet"> -->
+    <!-- <link href="DataTables/DataTables-1.13.6/css/dataTables.bootstrap.css" rel="stylesheet"> -->
+
 
     <!-- Java Script -->
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-    <script src="//cdn.datatables.net/1.13.2/js/jquery.dataTables.min.js"></script>
+    <!-- <script src="//cdn.datatables.net/1.13.2/js/jquery.dataTables.min.js"></script> -->
+    <script src="assets/DataTables/datatables.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script> 
+    <!-- <script src="./assets/js/insertData.js"></script> -->
+
     
     <!-- icon -->
     <link href="assets/img/Logo_PLN.png" rel="shortcut icon">
@@ -47,21 +55,21 @@
     
     <div class="cover-back">
         <div class="top-table">
-            <div class="search-wrapper">
+            <!-- <div class="search-wrapper">
                 <div class="search">
                     <input type="text" id="search-bar" placeholder="search param...">
                     <i class="fa fa-search"></i>
                 </div>
-            </div>
+            </div> -->
 
             <div class="btn-wrapper">
                 <div class="btn-add">
                     <a href="add.html"><button id="addData"> Tambah Data</button></a>
                 </div>
                 <div class="btn-download">
-                    <button id="btnDown"><i class="fa fa-download"></i> Download</button>
+                    <button type="submit" onclick="" id="btnDown"><i class="fa fa-download"></i> Download</button>
                 </div>
-            </div>
+               </div>
         </div>
 
         <!-- <div class="d-flex justify-content-center">
@@ -148,6 +156,7 @@
     <!-- javascript -->
     <!-- <script src="./assets/js/main.js"></script> -->
     <script src="./assets/js/calldata.js"></script>
+    <script type="module" src="./assets/js/exportData.js"></script>
 
 
 

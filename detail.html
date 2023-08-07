@@ -12,8 +12,9 @@
     <!-- <link rel="stylesheet" href="./assets/style/style.css"> -->
 
     <!-- Java Script -->
-    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="./assets/js/detailData.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script> 
     <!-- <script src="./assets/js/main.js"></script> -->
 
     
@@ -46,15 +47,23 @@
         <p>Lihat detail Keypoint yang kamu scan!</p>
     </div>
 
-    <div id=btnWrap class="btn-wrapper">
-        <div class="editbtn">
+    <div class="btn-wrapper">
+        <!-- <div class="editbtn">
             <a href="edit.html">
-            <button id="btnEdit" onclick=""><i class="fa fa-edit"></i> Edit Data</button>
+                <button id="btnEdit" onclick=""><i class="fa fa-edit"></i> Edit Data</button>
             </a>
         </div>
         <div class="deletebtn">
-            <button id="btnDelete"><i class="fa fa-trash"></i> Hapus</button>
+            <button id="btnDelete" onclick="deleteBtn()"><i class="fa fa-trash"></i> Hapus</button>
+        </div> -->
+
+        <div class="editbtn">
+            <button id="btnEdit" onclick="redirectToEditPage()"><i class="fa fa-edit"></i> Edit Data</button>
         </div>
+        <div class="deletebtn">
+            <button id="btnDelete" onclick="deleteBtn()"><i class="fa fa-trash"></i> Hapus</button>
+        </div>
+
     </div>
 
     <div class="detail">
@@ -79,7 +88,7 @@
         <div class="view-detail">
             <div class="dark">
                 <p class="desc-title">Jenis Peralatan</p>
-                <p class="desc-mat" id="jenis-Peralatan">LBS</p>
+                <p class="desc-mat" id="jenis_peralatan">LBS</p>
             </div>
         </div>
         <div class="view-detail">

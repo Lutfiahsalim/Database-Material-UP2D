@@ -1,4 +1,4 @@
-const baseUrl = "https://newbackend-datar-zbzgct5ujq-et.a.run.app"
+const baseUrl = "http://localhost:5000"
 const urlProduct = baseUrl + "/products"
 
 
@@ -13,12 +13,11 @@ $(document).ready(function() {
     let noSerial = $('#noSerial').val() ? $('#noSerial').val() : blankValue("Nomor Serial");
     let keypoint = $('#keypoint').val() ? $('#keypoint').val() : blankValue("Keypoint");
     let merk_rtu = $('#merk_rtu').val() ? $('#merk_rtu').val() : blankValue("Merk RTU");
-    let jenis_peralatan = $('#peralatan').val() ? $('#peralatan').val() : blankValue("Jenis Peralatan");
+    let jenis_peralatan = $('#jenis_peralatan').val() ? $('#jenis_peralatan').val() : blankValue("Jenis Peralatan");
     let komunikasi = $('#komunikasi').val() ? $('#komunikasi').val() : blankValue("Komunikasi");
     let link = $('#link').val() ? $('#link').val() : blankValue("Link");
     let tegangan_kerja = $('#tegangan_kerja').val() ? $('#tegangan_kerja').val() : blankValue("Tegangan Kerja"); 
-    // let pemeliharaanTerakhir = $('#pemeliharaanTerakhir').val() ? $('#pemeliharaanTerakhir').val() : blankValue("Pemeliharaan Terakhir");
-    let pemeliharaanTerakhir = $('pemeliharaanTerakhir1').val() ? $('pemeliharaanTerakhir1').val() : blankValue("Pemeliharaan Terakhir");
+    let pemeliharaanTerakhir = $('#pemeliharaanTerakhir').val() ? $('#pemeliharaanTerakhir').val() : blankValue("Pemeliharaan Terakhir");
 
     if(!noSerial || !keypoint || !merk_rtu || !komunikasi || !link || !tegangan_kerja){
       blankValue()
@@ -71,38 +70,35 @@ function dataKeypointDetail(products) {
   let noSerial = products.noSerial ? products.noSerial : '-';
   let keypoint = products.keypoint ? products.keypoint: '-';
   let merk_rtu = products.merekRTU ? products.merekRTU: '-';
-  let jenis_peralatan = dropDownPeralatan();
+  let jenis_peralatan = products.jenis_peralatan ? products.jenis_peralatan: '-';
   let komunikasi = products.komunikasi ? products.komunikasi: '-';
   let link = products.link ? products.link: '-';
   let tegangan_kerja = products.teganganRTU ? products.teganganRTU: '-';
   let pemeliharaanTerakhir = products.pemeliharaanTerakhir ? products.pemeliharaanTerakhir: '-';
-  // let pemeliharaanTerakhir1 = "2023-12-12";
 
   $("#noSerial").val(noSerial);
   $("#keypoint").val(keypoint);
   $("#merk_rtu").val(merk_rtu);
-  $("#peralatan").val(jenis_peralatan);
+  $("#jenis_peralatan").val(jenis_peralatan);
   $("#komunikasi").val(komunikasi);
   $("#link").val(link);
   $("#tegangan_kerja").val(tegangan_kerja);
   $("#pemeliharaanTerakhir").val(pemeliharaanTerakhir);
 }
 
-function dropDownPeralatan() {
-  $(".default_option").click(function () {
-    $(this).parent().toggleClass("active");
-  });
-  
-  $(".select_ul li").click(function () {
-    var currentele = $(this).html();
-    $(".default_option li").html(currentele);
-    $(".select_ul li").removeClass("active");
-    $(this).addClass("active");
-    $(this).parents(".select_wrap").removeClass("active");
-  })
+function toggleDropdown() {
+  var dropdownContent = document.getElementById("dropdownContent");
+  dropdownContent.style.display = dropdownContent.style.display === "block" ? "none" : "block";
 }
 
-function updateKeypoint(noSerial, keypoint, merk_rtu, peralatan, komunikasi, link, tegangan_kerja, pemeliharaanTerakhir) {
+function selectOption(option) {
+  document.getElementById("jenis_peralatan").value = option;
+  var selectedButton = document.querySelector(".dropdown-button");
+  selectedButton.innerText = option;
+  toggleDropdown();
+}
+
+function updateKeypoint(noSerial, keypoint, merk_rtu, jenis_peralatan, komunikasi, link, tegangan_kerja, pemeliharaanTerakhir) {
   let tokenData = JSON.parse(sessionStorage.getItem("TOKEN_DATA"));
   let token = tokenData.token
 
@@ -113,7 +109,7 @@ function updateKeypoint(noSerial, keypoint, merk_rtu, peralatan, komunikasi, lin
     "noSerial": noSerial,
     "keypoint": keypoint,
     "merk_rtu": merk_rtu,
-    "peralatan": peralatan,
+    "jenisPeralatan": jenis_peralatan,
     "komunikasi": komunikasi,
     "link": link,
     "tegangan_kerja":tegangan_kerja,
@@ -131,6 +127,7 @@ function updateKeypoint(noSerial, keypoint, merk_rtu, peralatan, komunikasi, lin
     "data": JSON.stringify(dataKeypoint)
   };
 
+  // console.log(setupKeypointUpdate.data)
   console.log(JSON.parse(setupKeypointUpdate.data))
   $.ajax(setupKeypointUpdate)
   .fail(function(response){
@@ -145,9 +142,14 @@ function updateKeypoint(noSerial, keypoint, merk_rtu, peralatan, komunikasi, lin
         icon: "success",
         showCancelButton: false,
         showConfirmButton: true,
-      })
-    }
-  })
+      }) .then((result) => {
+        if (result.isConfirmed) {
+            // Mengarahkan pengguna ke halaman "halaman_berhasil.html" setelah berhasil menyimpan data
+            window.location.href = "detail.html";
+        }
+      });
+    } 
+  }) 
 } 
 
 function ajaxFailedFeedback(response) {

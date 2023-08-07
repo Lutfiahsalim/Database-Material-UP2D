@@ -60,16 +60,18 @@
         <input type="text" id="merekRTU" class="user-form" placeholder="Masukkan merk RTU material"> <br>
     </div>
     <div class="form-wrapper">
-        <label for="user">Jenis Peralatan</label> <br>
-        <select name="peralatan" id="jenisPeralatan">
-            <option value="lbs">LBS</option>
-            <option value="recloser">Recloser</option>
-            <option value="gi">GI</option>
-            <option value="gh">GH</option>
-            <option value="fi">FI</option>
-            <option value="link">Link</option>
-        </select>
-        <!-- <input type="text" id="user-form" placeholder="Masukkan jenis peralatan material yang baru"> <br> -->
+            <label for="user">Jenis Peralatan</label> <br>
+            <div class="dropdown">
+                <button class="dropdown-button" onclick="toggleDropdown()">Pilih jenis peralatan</button>
+                <div class="dropdown-content" id="dropdownContent">
+                    <a href="#" onclick="selectOption('LBS')">LBS</a>
+                    <a href="#" onclick="selectOption('Recloser')">Recloser</a>
+                    <a href="#" onclick="selectOption('GH')">GH</a>
+                    <a href="#" onclick="selectOption('GI')">GI</a>
+                    <a href="#" onclick="selectOption('FI')">FI</a>
+                </div>
+            </div>
+            <input type="hidden" id="jenis_peralatan" name="selectedValue">
     </div>
     <div class="form-wrapper">
         <label for="user">Komunikasi</label> <br>
@@ -86,7 +88,7 @@
     <div class="form-wrapper">
         <label for="user">Pemeliharaan</label> <br>
         <div class="input-datetime">
-            <input type="date" id="start" name="trip-start"
+            <input id="pemeliharaanTerakhir" type="date" id="start" name="trip-start"
                 value="0000-00-00"
                 min="2018-01-01" max="2022-12-31"> <br>
         </div>

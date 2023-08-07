@@ -1,4 +1,4 @@
-const baseUrl = "https://newbackend-datar-zbzgct5ujq-et.a.run.app"
+const baseUrl = "http://localhost:5000"
 const urlProduct = baseUrl + "/products"
 
 let tokenData = sessionStorage.getItem("TOKEN_DATA");
@@ -8,7 +8,7 @@ if (!tokenData) {
   Swal.fire({
     title: `Harap Login terlebih dahulu!`,
     icon: "error",
-    showCacelButton: false,
+    showCancelButton: false,
     showConfirmButton: true,
   }).then(function(){
     window.location.href = "./login.html";
@@ -18,7 +18,6 @@ if (!tokenData) {
 $(document).ready(function() {
   loader()
   showData()
-  // tableData()
   detailBtn()
 });
 
@@ -60,7 +59,8 @@ function showDataTable(products) {
     object.qrcode = object.qrcode ? object.qrcode : '-';
 
     if (object.qrcode) {
-      object.qrcode = `<img src="${object.qrcode}"/>`
+      // object.qrcode = `<img src="${object.qrcode}"/>`
+      object.qrcode = `<img src="${object.qrcode}">`
     }
     object.keypoint = object.keypoint ? object.keypoint : '-';
     object.link = object.link ? object.link : '-';
@@ -70,8 +70,6 @@ function showDataTable(products) {
     if (object.pemeliharaanTerakhir) {
       object.pemeliharaanTerakhir = `${object.pemeliharaanTerakhir.slice(0, -14)}`
     }
-
-
 
   })
   $('#tableData_Showdata').DataTable ({
@@ -89,57 +87,8 @@ function showDataTable(products) {
 
 }
 
-// function tableData(apiData) {
-//   let tabelData;
-
-//   if(apiData.length == 0){
-//     tabelData = `
-//     <tr>
-//       <td colspan="7">We can't find your request on our Database.</td> 
-//     </tr>
-//     `;
-//   } 
-//   else {
-//     apiData.map((index, item) =>{
-//       let noRow = item + 1
-      // condition if the value is null or undefined
-//       let noSerial = index.noSerial ? index.noSerial : '-';
-//       let keypoint = index.keypoint ? index.keypoint : '-';
-//       let link = index.link ? index.link : '-';
-//       let pemeliharaanTerakhir = index.pemeliharaanTerakhir;
-
-//       if(!pemeliharaanTerakhir){
-//         pemeliharaanTerakhir = '-'
-//       }
-//       let waktu = pemeliharaanTerakhir.slice(11, -5)
-//       tabelData += `
-//           <tr>
-//             <td>${noRow}</td>
-//             <td></td>
-//             <td class="serial-num">
-//               <a href="detail.html">
-//                 <button onClick="detailBtn('${index.uuid}')">${noSerial}</button>
-//               </a>
-//             </td>
-//             <td>${keypoint}</td>
-//             <td>${link}</td>
-//             <td>${tanggal} ${waktu}</td>
-//           </tr>a
-//           `
-//     })
-//   }
-//   $("#tableData_ShowData").html(tabelData);
-// }
-
 function detailBtn(uuidData) {
-  // window.location.href = "../detail.html"
-  // alert("1");
-  // console.log(uuidData)
   sessionStorage.setItem("UUID_DATA",JSON.stringify(uuidData));
-
-
-  // let uuidData = JSON.parse(sessionStorage.getItem("UUID_DATA"))
-  // console.log(uuidData)
 }
 
 function loader() {

@@ -63,63 +63,17 @@
     </div>
     <div class="form-wrapper">
         <label for="user">Jenis Peralatan</label> <br>
-        <!-- <select id="peralatan" class="peralatan">
-            <option value="lbs">LBS</option>
-            <option value="recloser">Recloser</option>
-            <option value="gi">GI</option>
-            <option value="gh">GH</option>
-            <option value="fi">FI</option>
-            <option value="link">Link</option>
-        </select> -->
-            <div id="peralatan" class="select_wrap">
-                <ul class="default_option">
-                    <div class="icon">
-                        <ion-icon name="chevron-down-outline"></ion-icon>
-                    </div>
-                    <li>
-                        <div class="option">
-                            <p>LBS</p>
-                        </div>
-                    </li>
-                </ul>
-                <ul class="select_ul">
-                    <li class="active">
-                        <div class="option">
-                            <p>LBS</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="option">
-                            <p>Recloser</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="option">
-                            <p>GH</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="option">
-                            <p>GI</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="option">
-                            <p>FI</p>
-                        </div>
-                    </li>
-                </ul>
-            <!-- </div>  -->
-                   
-            <!-- <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              pilih
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-              <button class="dropdown-item" type="button">LBS</button>
-              <button class="dropdown-item" type="button">Recloser</button>
-              <button class="dropdown-item" type="button">GI</button>
-            </div> -->
-    </div>
+        <div class="dropdown">
+            <button class="dropdown-button" onclick="toggleDropdown()">Pilih jenis peralatan</button>
+            <div class="dropdown-content" id="dropdownContent">
+                <a href="#" onclick="selectOption('LBS')">LBS</a>
+                <a href="#" onclick="selectOption('Recloser')">Recloser</a>
+                <a href="#" onclick="selectOption('GH')">GH</a>
+                <a href="#" onclick="selectOption('GI')">GI</a>
+                <a href="#" onclick="selectOption('FI')">FI</a>
+            </div>
+        </div>
+        <input type="hidden" id="jenis_peralatan" name="selectedValue">
     </div>
     <div class="form-wrapper">
         <label for="user">Komunikasi</label> <br>
@@ -134,15 +88,12 @@
         <input type="text" id="tegangan_kerja" class="user-form" placeholder="Masukkan tegangan kerja material yang baru"> <br>
     </div>
     <div class="form-wrapper">
-        <label for="user">Pemeliharaan terakhir</label> <br>
-        <div class="input-datetime" id="pemeliharaanTerakhir">
-            <input type="datetime" id="start" name="trip-start"
-            value="0000-00-00"
-            min="2018-01-01" max="2022-12-31"> <br>
+        <label for="user">Pemeliharaan</label> <br>
+        <div class="input-datetime">
+            <input id="pemeliharaanTerakhir" type="date" id="start" name="trip-start"
+                value="0000-00-00"
+                min="2018-01-01" max="2022-12-31"> <br>
         </div>
-        <!-- <div class="input-datetime" id="pemeliharaanTerakhir">
-            <input type="text"> <br>
-        </div> -->
     </div>
 
         <div class="btn-wrap">

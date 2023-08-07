@@ -1,12 +1,4 @@
-const baseUrl = "https://newbackend-datar-zbzgct5ujq-et.a.run.app"
-
-// import swal from 'sweetalert';
-
-// const formLogin = {
-//     username: document.getElementById('username'),
-//     password: document.getElementById('password'),
-//     login: document.getElementById('btnLogin')
-// }
+const baseUrl = "http://localhost:5000"
 
 $(document).ready(function () {
     $("#btnLogin").on('click', function (e) {

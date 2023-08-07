@@ -44,6 +44,7 @@
     font-size: 15px;
     background: transparent;
     border: none;
+    cursor: pointer;
 }
 
 .btn-wrapper .deletebtn {
@@ -60,6 +61,13 @@
     text-decoration: none;
     background: transparent;
     border: none;
+}
+
+.editbtn button[disabled],
+.deletebtn button[disabled] {
+    opacity: 0.6;
+    cursor: not-allowed;
+    color: #BBBBBB;
 }
 
 /* ----------------DETAIL------------- */
